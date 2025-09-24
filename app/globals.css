@@ -22,5 +22,172 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Prevent horizontal overflow globally on mobile */
+@media (max-width: 640px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #2d2d2d;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777;
+  }
+}
+
+/* Line clamp utility for text truncation */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Mobile-optimized text styling */
+.mobile-optimized-text {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Mobile responsive typography */
+@media (max-width: 640px) {
+  .mobile-optimized-text {
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Improve touch targets on mobile */
+  .mobile-optimized-text a {
+    padding: 2px 0;
+    margin: -2px 0;
+    word-break: break-word;
+  }
+
+  /* Better spacing for mobile */
+  .mobile-optimized-text h1,
+  .mobile-optimized-text h2,
+  .mobile-optimized-text h3 {
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  /* Prevent horizontal overflow */
+  .mobile-optimized-text pre,
+  .mobile-optimized-text code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Strong text overflow prevention */
+  .mobile-optimized-text strong,
+  .mobile-optimized-text b,
+  .mobile-optimized-text em {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Paragraph overflow prevention */
+  .mobile-optimized-text p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  /* List item overflow prevention */
+  .mobile-optimized-text li {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  /* Table cell overflow prevention */
+  .mobile-optimized-text td,
+  .mobile-optimized-text th {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 0;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 641px) {
+  .mobile-optimized-text {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
 }
