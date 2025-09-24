@@ -122,7 +122,7 @@ export default function DocumentPresentation() {
           </div>
 
           <div className="hidden md:flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-            <span>TitVN AI Co., Ltd</span>
+            <span>Titvn AI Co., Ltd</span>
             <span>•</span>
             <span>September 2025</span>
           </div>

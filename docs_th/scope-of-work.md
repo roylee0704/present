@@ -1,397 +1,397 @@
-# Scope of Work: Government Meeting Management Mobile Application
+# ขอบเขตงาน: แอปพลิเคชันมือถือสำหรับบริหารการประชุมภาครัฐ
 
-## Executive Summary
+## สรุปผู้บริหาร
 
-**Project:** Digital transformation of municipal meeting management workflows through a secure, tablet-optimized Flutter application that eliminates paper-based processes and reduces meeting preparation time from 5-7 days to same-day digital approval.
+**โครงการ:** การเปลี่ยนผ่านสู่ดิจิทัลของเวิร์กโฟลว์การบริหารการประชุมขององค์กรปกครองส่วนท้องถิ่น ผ่านแอป Flutter สำหรับแท็บเล็ตที่ปลอดภัยและปรับแต่งสำหรับอุปกรณ์ ช่วยตัดกระบวนการใช้กระดาษ และลดเวลาเตรียมการประชุมจาก 5–7 วันให้เหลือการอนุมัติดิจิทัลภายในวันเดียว
 
-**Timeline:** 15-16 weeks (3.5-4 months)
-**Budget:** [To be determined based on client requirements]
-**Delivery:** Production-ready Flutter tablet application with backend APIs and enhanced admin panel
+**ระยะเวลา:** 15–16 สัปดาห์ (3.5–4 เดือน)
+**งบประมาณ:** [จะกำหนดตามความต้องการของลูกค้า]
+**ผลส่งมอบ:** แอปแท็บเล็ต Flutter พร้อมใช้งานจริง พร้อม API ฝั่งเซิร์ฟเวอร์ และแผงผู้ดูแลระบบที่ได้รับการปรับปรุง
 
-## Project Overview
+## ภาพรวมโครงการ
 
-Transform your municipal government's inefficient paper-based meeting coordination into a streamlined digital workflow. Our solution eliminates printing costs, postal delays, and administrative overhead while ensuring full compliance with Thai government security and digital signature requirements.
+พลิกกระบวนการประสานงานการประชุมขององค์กรปกครองส่วนท้องถิ่นที่ยังใช้กระดาษให้กลายเป็นเวิร์กโฟลว์ดิจิทัลที่ลื่นไหล โซลูชันของเราช่วยตัดค่าใช้จ่ายในการพิมพ์ ลดความล่าช้าจากไปรษณีย์ และลดภาระงานเอกสาร พร้อมทั้งรับรองการปฏิบัติตามข้อกำหนดด้านความปลอดภัยและลายมือชื่อดิจิทัลตามมาตรฐานภาครัฐไทยอย่างครบถ้วน
 
-### Key Business Outcomes
-- **80% reduction** in administrative coordination time
-- **5-7 days to same-day** meeting preparation cycle
-- **95% user adoption** target within 3 months
-- **100% digital audit trail** for compliance
-- **Significant cost savings** from eliminated printing and postal expenses
+### ผลลัพธ์ทางธุรกิจหลัก
+- ลดเวลาในการประสานงานด้านธุรการ **80%**
+- วงจรการเตรียมการประชุมจาก **5–7 วันเหลือวันเดียว**
+- เป้าหมายการยอมรับใช้งานโดยผู้ใช้ **95%** ภายใน 3 เดือน
+- **บันทึกตรวจสอบย้อนกลับดิจิทัล 100%** เพื่อการปฏิบัติตามข้อกำหนด
+- **ประหยัดต้นทุนอย่างมีนัยสำคัญ** จากการตัดค่าใช้จ่ายการพิมพ์และไปรษณีย์
 
-## Deliverables
+## ผลส่งมอบ
 
-### 1. Flutter Tablet Application
+### 1. แอปแท็บเล็ต Flutter
 
-#### Core Features
-- **Secure Authentication System**
-  - Thai National ID format authentication (9 9999 99999 99 9)
-  - Admin-generated passwords with mandatory first-time change
-  - Role-based access control for Mayors vs Council Members
+#### คุณสมบัติหลัก
+- **ระบบพิสูจน์ตัวตนที่ปลอดภัย**
+  - การยืนยันตัวตนตามรูปแบบเลขบัตรประชาชนไทย (9 9999 99999 99 9)
+  - รหัสผ่านที่ผู้ดูแลระบบสร้าง พร้อมบังคับเปลี่ยนเมื่อเข้าใช้ครั้งแรก
+  - การควบคุมการเข้าถึงตามบทบาทสำหรับนายกเทศมนตรีและสมาชิกสภา
 
-- **Mayor Workflow Module**
-  - "Requests" dashboard for pending meeting approvals
-  - Digital signature capture system (finger-based)
-  - Document preview with PDF/Word/Excel/image support
-  - Approve/reject actions with reasoning capability
-  - "Events" view for approved meetings
+- **โมดูลเวิร์กโฟลว์สำหรับนายกเทศมนตรี**
+  - หน้าปัด "Requests" สำหรับคำขออนุมัติการประชุมที่รอดำเนินการ
+  - ระบบบันทึกลายเซ็นดิจิทัล (ด้วยนิ้ว)
+  - พรีวิวเอกสาร รองรับ PDF/Word/Excel/รูปภาพ
+  - การอนุมัติ/ปฏิเสธ พร้อมระบุเหตุผล
+  - มุมมอง "Events" สำหรับรายการประชุมที่อนุมัติแล้ว
 
-- **Council Member Workflow Module**
-  - "Events" dashboard for assigned meetings
-  - Digital acknowledgment with signature capture
-  - Going/Declined response system
-  - Calendar integration ("Add to Calendar" functionality)
+- **โมดูลเวิร์กโฟลว์สำหรับสมาชิกสภา**
+  - หน้าปัด "Events" สำหรับประชุมที่ได้รับมอบหมาย
+  - การยืนยันรับทราบแบบดิจิทัลพร้อมลงลายเซ็น
+  - ระบบตอบรับ Going/Declined
+  - เชื่อมต่อปฏิทิน (ฟังก์ชัน "Add to Calendar")
 
-- **Document Management System**
-  - Tablet-optimized viewing for all document types
-  - Offline document caching and access
-  - Zoom, scroll, and navigation controls
-  - Up to 500MB offline storage per user
+- **ระบบจัดการเอกสาร**
+  - การแสดงผลที่ปรับแต่งสำหรับแท็บเล็ตสำหรับทุกประเภทเอกสาร
+  - แคชและเข้าถึงเอกสารแบบออฟไลน์
+  - ควบคุมการซูม เลื่อน และนำทาง
+  - พื้นที่เก็บออฟไลน์ต่อผู้ใช้สูงสุด 500MB
 
-#### Technical Specifications
-- **Platforms:** iOS (iPad) 14+ and Android 8.0+ tablets
-- **Performance:** <3 second document loading, <1 second signature capture
-- **Security:** End-to-end encryption, secure offline data storage
-- **Offline Capability:** Full document access during meetings without internet
+#### สเปกทางเทคนิค
+- **แพลตฟอร์ม:** แท็บเล็ต iOS (iPad) 14+ และ Android 8.0+
+- **ประสิทธิภาพ:** โหลดเอกสาร <3 วินาที จับลายเซ็น <1 วินาที
+- **ความปลอดภัย:** การเข้ารหัสแบบ End-to-End การจัดเก็บข้อมูลออฟไลน์ที่ปลอดภัย
+- **ใช้งานออฟไลน์:** เข้าถึงเอกสารได้เต็มรูปแบบระหว่างการประชุมโดยไม่ต้องใช้อินเทอร์เน็ต
 
-### 2. Backend API Development
+### 2. การพัฒนา Backend API
 
-#### Complete API Architecture
-- **Authentication Service**
-  - Thai National ID validation integration
-  - JWT-based secure session management
-  - Multi-factor authentication support
-  - Password policy enforcement and rotation
+#### สถาปัตยกรรม API ครบถ้วน
+- **บริการพิสูจน์ตัวตน (Authentication Service)**
+  - เชื่อมต่อการตรวจสอบเลขบัตรประชาชนไทย
+  - การจัดการเซสชันแบบปลอดภัยด้วย JWT
+  - รองรับการยืนยันตัวตนหลายปัจจัย (MFA)
+  - บังคับใช้นโยบายรหัสผ่านและการหมุนเวียน
 
 - **Meeting Workflow API**
-  - RESTful endpoints for meeting lifecycle management
-  - Real-time status tracking with WebSocket support
-  - Digital signature storage and verification
-  - Push notification integration via Firebase Cloud Messaging (FCM)
+  - ปลายทาง RESTful สำหรับการจัดการวงจรชีวิตการประชุม
+  - ติดตามสถานะแบบเรียลไทม์ด้วย WebSocket
+  - จัดเก็บและตรวจสอบลายเซ็นดิจิทัล
+  - เชื่อมต่อการแจ้งเตือนแบบพุชผ่าน Firebase Cloud Messaging (FCM)
 
 - **Document Management API**
-  - Secure file upload with virus scanning
-  - Document versioning and metadata management
-  - S3-compatible cloud storage integration
-  - Encrypted file transmission and access controls
+  - อัปโหลดไฟล์อย่างปลอดภัยพร้อมการสแกนไวรัส
+  - การจัดการเวอร์ชันเอกสารและเมทาดาทา
+  - เชื่อมต่อที่เก็บคลาวด์ที่เข้ากันได้กับ S3
+  - การส่งไฟล์แบบเข้ารหัสและการควบคุมการเข้าถึง
 
 - **User Management API**
-  - Role-based access control (RBAC) system for Mayor/Council Member/Admin roles
-  - User group management with flexible assignment capabilities
-  - Meeting invitation system with group-based or individual user selection
-  - Comprehensive audit trail logging
-  - Government compliance reporting
-  - User activity monitoring and analytics
+  - ระบบควบคุมการเข้าถึงตามบทบาท (RBAC) สำหรับบทบาท นายก/สมาชิกสภา/ผู้ดูแล
+  - การจัดการกลุ่มผู้ใช้พร้อมความยืดหยุ่นในการกำหนดสิทธิ์
+  - ระบบเชิญเข้าร่วมประชุมตามกลุ่มหรือรายบุคคล
+  - บันทึกเส้นทางการตรวจสอบ (Audit Trail) อย่างครบถ้วน
+  - รายงานการปฏิบัติตามข้อกำหนดภาครัฐ
+  - การติดตามและวิเคราะห์กิจกรรมผู้ใช้
 
-#### API Infrastructure
-- **Framework:** Node.js with TypeScript and Express.js
-- **Database:** PostgreSQL with TypeScript ORM (Prisma/TypeORM)
-- **Session Storage:** PostgreSQL-based sessions (optimized for 50-60 concurrent users)
-- **Documentation:** OpenAPI 3.0 specification with Swagger UI
-- **Testing:** Jest/Vitest with TypeScript for unit and integration tests
-- **Type Safety:** Full end-to-end TypeScript implementation
+#### โครงสร้างพื้นฐานของ API
+- **เฟรมเวิร์ก:** Node.js พร้อม TypeScript และ Express.js
+- **ฐานข้อมูล:** PostgreSQL พร้อม ORM ของ TypeScript (Prisma/TypeORM)
+- **ที่จัดเก็บเซสชัน:** เซสชันบน PostgreSQL (ปรับแต่งสำหรับผู้ใช้พร้อมกัน 50–60 คน)
+- **เอกสารประกอบ:** สเปก OpenAPI 3.0 พร้อม Swagger UI
+- **การทดสอบ:** Jest/Vitest บน TypeScript สำหรับยูนิตและอินทิเกรชันเทสท์
+- **ความปลอดภัยของชนิดข้อมูล:** ใช้ TypeScript แบบ End-to-End
 
-### 3. Admin Panel Development & Enhancement
+### 3. การพัฒนาและยกระดับแผงผู้ดูแลระบบ (Admin Panel)
 
-#### Complete Web Administration System
-- **Meeting Management Interface**
-  - Intuitive meeting creation workflow with drag-drop document upload
-  - Bulk user assignment and invitation system
-  - Real-time approval status dashboard with progress tracking
-  - Meeting template system for recurring events
-  - Calendar integration and conflict detection
+#### ระบบบริหารจัดการผ่านเว็บแบบครบถ้วน
+- **ส่วนจัดการการประชุม**
+  - เวิร์กโฟลว์สร้างการประชุมที่ใช้งานง่าย พร้อมอัปโหลดเอกสารแบบลากและวาง
+  - มอบหมายผู้ใช้แบบกลุ่มและระบบเชิญ
+  - หน้าปัดติดตามสถานะการอนุมัติแบบเรียลไทม์พร้อมความคืบหน้า
+  - ระบบแม่แบบการประชุมสำหรับเหตุการณ์ซ้ำ
+  - เชื่อมต่อปฏิทินและตรวจจับความขัดแย้งของตาราง
 
-- **User Management System**
-  - Individual user registration for mayors and council members
-  - Role assignment and permission management (Mayor, Council Member, Admin)
-  - User group creation and management from existing users
-  - Meeting assignment by user groups or individual selection
-  - User activity monitoring and audit logs
-  - Password reset and account management tools
+- **ระบบจัดการผู้ใช้**
+  - ลงทะเบียนผู้ใช้รายบุคคลสำหรับนายกและสมาชิกสภา
+  - กำหนดบทบาทและสิทธิ์ (นายก สมาชิกสภา ผู้ดูแล)
+  - สร้างและจัดการกลุ่มผู้ใช้จากผู้ใช้ที่มีอยู่
+  - มอบหมายการประชุมตามกลุ่มหรือรายบุคคล
+  - ติดตามกิจกรรมผู้ใช้และบันทึกตรวจสอบ
+  - เครื่องมือรีเซ็ตรหัสผ่านและจัดการบัญชี
 
-- **Document Management Portal**
-  - Secure document upload with file type validation
-  - Document versioning and revision history
-  - Bulk document operations and organization
-  - Preview functionality for all supported file types
-  - Storage usage monitoring and optimization
+- **พอร์ทัลจัดการเอกสาร**
+  - อัปโหลดเอกสารอย่างปลอดภัยพร้อมตรวจสอบชนิดไฟล์
+  - จัดการเวอร์ชันและประวัติการแก้ไข
+  - การดำเนินการเอกสารแบบกลุ่มและการจัดระเบียบ
+  - พรีวิวไฟล์สำหรับทุกชนิดที่รองรับ
+  - ตรวจสอบและเพิ่มประสิทธิภาพการใช้พื้นที่จัดเก็บ
 
-- **Analytics & Reporting Dashboard**
-  - Government compliance reporting suite
-  - Meeting participation analytics
-  - Response time and efficiency metrics
-  - Audit trail visualization and export
-  - Custom report generation
+- **แดชบอร์ดการวิเคราะห์และรายงาน**
+  - ชุดรายงานการปฏิบัติตามข้อกำหนดสำหรับภาครัฐ
+  - การวิเคราะห์การมีส่วนร่วมในการประชุม
+  - เมตริกเวลาตอบสนองและประสิทธิภาพ
+  - มุมมองและส่งออกบันทึกตรวจสอบ (Audit Trail)
+  - สร้างรายงานแบบกำหนดเอง
 
-#### Technology Stack
-- **Frontend:** Next.js 14+ with React 18 and TypeScript
-- **UI Framework:** Tailwind CSS or Material-UI with responsive design
-- **Backend Integration:** TypeScript API client with type-safe endpoints
-- **Authentication:** NextAuth.js with SSO integration
-- **Notifications:** Firebase Cloud Messaging integration for admin alerts
-- **Analytics:** Firebase Analytics dashboard integration
-- **State Management:** Zustand or Redux Toolkit with TypeScript
-- **UI/UX:** Government accessibility compliance (WCAG 2.1)
+#### ชุดเทคโนโลยี
+- **ส่วนหน้า (Frontend):** Next.js 14+ พร้อม React 18 และ TypeScript
+- **เฟรมเวิร์ก UI:** Tailwind CSS หรือ Material-UI พร้อมดีไซน์ตอบสนองทุกอุปกรณ์
+- **เชื่อมต่อแบ็กเอนด์:** ไคลเอนต์ API แบบ TypeScript พร้อมปลายทางที่ปลอดภัยเชิงชนิดข้อมูล
+- **การพิสูจน์ตัวตน:** NextAuth.js พร้อมการเชื่อมต่อ SSO
+- **การแจ้งเตือน:** เชื่อมต่อ Firebase Cloud Messaging สำหรับการแจ้งเตือนผู้ดูแล
+- **การวิเคราะห์:** เชื่อมต่อแดชบอร์ด Firebase Analytics
+- **การจัดการสถานะ:** Zustand หรือ Redux Toolkit พร้อม TypeScript
+- **UI/UX:** ปฏิบัติตามมาตรฐานการเข้าถึงของภาครัฐ (WCAG 2.1)
 
-### 4. AWS Cloud Infrastructure & Database
+### 4. โครงสร้างพื้นฐาน AWS Cloud และฐานข้อมูล
 
-#### Complete Cloud Architecture Setup
-- **AWS Infrastructure Design**
-  - Multi-AZ deployment for high availability
-  - Right-sized EC2 instances for 50-60 concurrent users
-  - Application Load Balancer with SSL/TLS termination
-  - VPC with private/public subnets and security groups
-  - NAT Gateway for secure outbound connectivity
+#### การตั้งค่าสถาปัตยกรรมคลาวด์แบบครบถ้วน
+- **ออกแบบโครงสร้างพื้นฐาน AWS**
+  - การปรับใช้แบบ Multi-AZ เพื่อความพร้อมใช้งานสูง
+  - เลือกขนาดอินสแตนซ์ EC2 ที่เหมาะสมสำหรับผู้ใช้พร้อมกัน 50–60 คน
+  - Application Load Balancer พร้อมสิ้นสุด SSL/TLS
+  - VPC พร้อมซับเน็ตสาธารณะ/ส่วนตัวและ Security Group
+  - NAT Gateway สำหรับการเชื่อมต่อออกอย่างปลอดภัย
 
-- **Database Infrastructure**
-  - **Primary Database:** Amazon RDS PostgreSQL with Multi-AZ
-  - **Session Management:** Database-based sessions (cost-effective for small user base)
-  - **Database Security:** Encryption at rest, automated backups
-  - **Performance:** Single instance sufficient for 50-60 users, with backup strategy
-  - **Monitoring:** CloudWatch database performance insights
+- **โครงสร้างพื้นฐานฐานข้อมูล**
+  - **ฐานข้อมูลหลัก:** Amazon RDS PostgreSQL แบบ Multi-AZ
+  - **การจัดการเซสชัน:** เซสชันบนฐานข้อมูล (คุ้มค่าสำหรับฐานผู้ใช้ขนาดเล็ก)
+  - **ความปลอดภัยของฐานข้อมูล:** เข้ารหัสขณะพักและอัตโนมัติสำรองข้อมูล
+  - **ประสิทธิภาพ:** อินสแตนซ์เดียวเพียงพอสำหรับผู้ใช้ 50–60 คน พร้อมแผนสำรอง
+  - **การติดตาม:** CloudWatch Performance Insights ของฐานข้อมูล
 
-- **File Storage & CDN**
-  - **Amazon S3:** Secure document storage with versioning
-  - **S3 Security:** Server-side encryption, bucket policies, IAM roles
-  - **CloudFront CDN:** Global content delivery for document access
-  - **Lifecycle Management:** Automated archival and cost optimization
-  - **Backup Strategy:** Cross-region replication for disaster recovery
+- **ที่เก็บไฟล์และ CDN**
+  - **Amazon S3:** ที่เก็บเอกสารที่ปลอดภัยพร้อมเวอร์ชันนิ่ง
+  - **ความปลอดภัยของ S3:** การเข้ารหัสฝั่งเซิร์ฟเวอร์ นโยบายบัคเก็ต และบทบาท IAM
+  - **CloudFront CDN:** กระจายเนื้อหาทั่วโลกเพื่อการเข้าถึงเอกสาร
+  - **การจัดการวงจรอายุ:** การเก็บถาวรอัตโนมัติและเพิ่มประสิทธิภาพค่าใช้จ่าย
+  - **กลยุทธ์สำรองข้อมูล:** ทำซ้ำข้ามภูมิภาคเพื่อรองรับเหตุฉุกเฉิน
 
-- **Firebase Integration**
-  - **Firebase Cloud Messaging (FCM):** Cross-platform push notifications
-  - **Firebase Analytics:** User engagement and app performance tracking
-  - **Firebase Crashlytics:** Real-time crash reporting and monitoring
-  - **Firebase Remote Config:** Feature flags and configuration management
-  - **Firebase Security Rules:** Additional authentication and authorization
+- **การเชื่อมต่อ Firebase**
+  - **Firebase Cloud Messaging (FCM):** การแจ้งเตือนแบบพหุแพลตฟอร์ม
+  - **Firebase Analytics:** ติดตามการมีส่วนร่วมและประสิทธิภาพของแอป
+  - **Firebase Crashlytics:** รายงานและติดตามการล่มแบบเรียลไทม์
+  - **Firebase Remote Config:** จัดการคุณลักษณะและการตั้งค่าด้วยแฟลก
+  - **Firebase Security Rules:** เพิ่มความสามารถด้านการยืนยันตัวตนและการอนุญาต
 
-- **DevOps & Deployment**
-  - **CI/CD Pipeline:** AWS CodePipeline with GitHub integration
-  - **Container Orchestration:** Amazon ECS/EKS for scalable deployment
-  - **Infrastructure as Code:** Terraform/CloudFormation templates
-  - **Monitoring:** CloudWatch, X-Ray tracing, Firebase Analytics dashboards
-  - **Log Management:** Centralized logging with ElasticSearch/CloudWatch Logs
+- **DevOps และการปรับใช้**
+  - **สายงาน CI/CD:** AWS CodePipeline เชื่อมต่อ GitHub
+  - **การจัดการคอนเทนเนอร์:** Amazon ECS/EKS สำหรับการปรับขยายได้
+  - **โครงสร้างพื้นฐานเป็นโค้ด:** เทมเพลต Terraform/CloudFormation
+  - **การติดตาม:** CloudWatch, การติดตามด้วย X-Ray, แดชบอร์ด Firebase Analytics
+  - **การจัดการล็อก:** การบันทึกแบบรวมศูนย์ด้วย ElasticSearch/CloudWatch Logs
 
-### 5. Technology Stack Justification
+### 5. เหตุผลเชิงเทคนิคของชุดเทคโนโลยี
 
-#### Why AWS + Custom TypeScript Stack?
+#### เหตุใดจึงเลือก AWS + สแตก TypeScript แบบกำหนดเอง?
 
-**Government Compliance Requirements:**
-- **AWS Government Certifications:** SOC 2 Type II, ISO 27001, and government-approved cloud infrastructure
-- **Data Sovereignty:** Full control over data location and residency within Thai borders
-- **Enterprise SLAs:** 99.99% uptime guarantees with government-grade support contracts
-- **Audit Trail Compliance:** Complete control over logging, monitoring, and compliance reporting systems
+**ข้อกำหนดการปฏิบัติตามของภาครัฐ:**
+- **ใบรับรองของ AWS สำหรับภาครัฐ:** SOC 2 Type II, ISO 27001 และโครงสร้างพื้นฐานคลาวด์ที่หน่วยงานรัฐรับรอง
+- **อธิปไตยข้อมูล:** ควบคุมตำแหน่งและถิ่นฐานข้อมูลได้เต็มรูปแบบภายในประเทศ
+- **ข้อตกลงระดับการให้บริการระดับองค์กร:** การันตี Uptime 99.99% พร้อมสัญญาสนับสนุนระดับภาครัฐ
+- **การปฏิบัติตามบันทึกตรวจสอบ:** ควบคุมการบันทึก การติดตาม และระบบรายงานข้อกำหนดได้อย่างสมบูรณ์
 
-**Security & Scalability Advantages:**
-- **Proven Track Record:** Trusted by governments worldwide for sensitive applications
-- **Custom Security Implementation:** Tailored security measures for Thai National ID validation and digital signatures
-- **Scalability:** Auto-scaling infrastructure handles municipal growth without vendor limitations
-- **Future-Proof:** No vendor lock-in allows technology evolution as requirements change
+**ข้อได้เปรียบด้านความปลอดภัยและการปรับขยาย:**
+- **ผลงานที่พิสูจน์แล้ว:** เชื่อถือได้โดยหน่วยงานรัฐทั่วโลกสำหรับแอปพลิเคชันอ่อนไหว
+- **ความปลอดภัยที่ปรับแต่งได้:** มาตรการเฉพาะสำหรับการตรวจเลขบัตรประชาชนไทยและลายเซ็นดิจิทัล
+- **การปรับขยาย:** โครงสร้างพื้นฐานแบบปรับขนาดอัตโนมัติรองรับการเติบโตโดยไม่ติดผู้ให้บริการ
+- **รองรับอนาคต:** ไม่มีการผูกขังกับผู้ขาย เปิดทางให้พัฒนาเทคโนโลยีตามความต้องการที่เปลี่ยนไป
 
-**Right-Sized Architecture for Small User Base (50-60 users):**
+**สถาปัตยกรรมขนาดเหมาะสมสำหรับผู้ใช้น้อย (50–60 คน):**
 ```
 Over-Engineered Alternatives:
-✗ Redis caching unnecessary for 50-60 concurrent users
-✗ Multi-AZ deployments excessive for small government office
-✗ Auto-scaling groups not needed for predictable load
-✗ Complex microservices architecture adds unnecessary complexity
+✗ Redis caching ไม่จำเป็นสำหรับผู้ใช้พร้อมกัน 50–60 คน
+✗ การปรับใช้แบบ Multi-AZ เกินความจำเป็นสำหรับสำนักงานขนาดเล็ก
+✗ กลุ่ม Auto-scaling ไม่จำเป็นสำหรับโหลดที่คาดการณ์ได้
+✗ สถาปัตยกรรมไมโครเซอร์วิสที่ซับซ้อนเพิ่มความยุ่งยากโดยไม่จำเป็น
 
 Optimized AWS Stack:
-✅ Single RDS instance handles 50-60 users efficiently
-✅ Simple session management via database
-✅ Cost-effective infrastructure sizing
-✅ Government compliance maintained without over-provisioning
-✅ Easy to scale up if user base grows significantly
+✅ RDS เดียวรองรับผู้ใช้ 50–60 คนได้อย่างมีประสิทธิภาพ
+✅ จัดการเซสชันแบบเรียบง่ายผ่านฐานข้อมูล
+✅ ปรับขนาดโครงสร้างพื้นฐานคุ้มค่า
+✅ รักษาการปฏิบัติตามข้อกำหนดภาครัฐโดยไม่ต้องจัดสรรเกิน
+✅ ขยายขนาดได้ง่ายเมื่อฐานผู้ใช้เติบโตอย่างมีนัยสำคัญ
 ```
 
-**Development Efficiency with TypeScript:**
-- **Type Safety:** End-to-end TypeScript reduces bugs by 60% compared to JavaScript
-- **Developer Experience:** Auto-completion and error detection accelerate development
-- **Maintainability:** Self-documenting code crucial for government long-term support
-- **Integration:** Seamless integration between Next.js admin panel, TypeScript API, and Flutter mobile app
+**ประสิทธิภาพการพัฒนาด้วย TypeScript:**
+- **ความปลอดภัยของชนิดข้อมูล:** TypeScript แบบ End-to-End ลดบั๊กได้ ~60% เมื่อเทียบกับ JavaScript
+- **ประสบการณ์นักพัฒนา:** ระบบเติมคำอัตโนมัติและการตรวจจับข้อผิดพลาดช่วยเร่งการพัฒนา
+- **การดูแลรักษา:** โค้ดอธิบายตนเอง เหมาะสำหรับการดูแลระยะยาวในโครงการภาครัฐ
+- **การบูรณาการ:** เชื่อมต่อระหว่างแผงผู้ดูแล Next.js, API แบบ TypeScript และแอป Flutter ได้อย่างไร้รอยต่อ
 
-### 6. Security & Compliance
+### 6. ความปลอดภัยและการปฏิบัติตามข้อกำหนด
 
-#### Enterprise-Grade Security Architecture
-- **Network Security**
-  - AWS WAF for application-layer protection
-  - VPC security groups and NACLs
-  - DDoS protection with AWS Shield
-  - Private API endpoints and secure connectivity
+#### สถาปัตยกรรมความปลอดภัยระดับองค์กรมาตรฐาน
+- **ความปลอดภัยเครือข่าย**
+  - AWS WAF สำหรับการป้องกันระดับแอปพลิเคชัน
+  - Security Group และ NACLs ภายใน VPC
+  - ป้องกัน DDoS ด้วย AWS Shield
+  - Private API endpoints และการเชื่อมต่อที่ปลอดภัย
 
-- **Data Protection & Encryption**
-  - End-to-end encryption using AWS KMS
-  - Database encryption at rest and in transit
-  - S3 server-side encryption with customer-managed keys
-  - Secure document transmission with TLS 1.3
+- **การปกป้องข้อมูลและการเข้ารหัส**
+  - การเข้ารหัสแบบ End-to-End ด้วย AWS KMS
+  - เข้ารหัสฐานข้อมูลขณะพักและระหว่างส่งผ่าน
+  - เข้ารหัสฝั่งเซิร์ฟเวอร์ของ S3 ด้วยกุญแจที่ผู้ใช้จัดการเอง
+  - ส่งเอกสารอย่างปลอดภัยด้วย TLS 1.3
 
-- **Identity & Access Management**
-  - AWS IAM with least-privilege access principles
-  - Multi-factor authentication (MFA) enforcement
-  - Role-based access control (RBAC) implementation
-  - API key management and rotation
+- **การจัดการตัวตนและการเข้าถึง**
+  - AWS IAM ตามหลักสิทธิ์น้อยที่สุด
+  - บังคับใช้การยืนยันตัวตนหลายปัจจัย (MFA)
+  - ใช้การควบคุมการเข้าถึงตามบทบาท (RBAC)
+  - จัดการและหมุนเวียนคีย์ API
 
-- **Compliance & Audit**
-  - Tamper-proof audit trails with AWS CloudTrail
-  - Thai government digital signature compliance
-  - GDPR-ready data handling and privacy controls
-  - SOC 2 Type II compliance preparation
-  - Regular security assessments and penetration testing
+- **การปฏิบัติตามและการตรวจสอบ**
+  - บันทึกตรวจสอบที่แก้ไขย้อนหลังไม่ได้ด้วย AWS CloudTrail
+  - ปฏิบัติตามข้อกำหนดลายเซ็นดิจิทัลของภาครัฐไทย
+  - การจัดการข้อมูลและความเป็นส่วนตัวพร้อมสำหรับ GDPR
+  - เตรียมความพร้อมสู่การปฏิบัติตาม SOC 2 Type II
+  - ประเมินความปลอดภัยและทดสอบการเจาะระบบอย่างสม่ำเสมอ
 
-## Project Timeline
+## ไทม์ไลน์โครงการ
 
-### Phase 1: Infrastructure & Foundation (Weeks 1-3)
-**Deliverables:**
-- **AWS Cloud Infrastructure Setup**
-  - VPC, subnets, security groups configuration
-  - RDS PostgreSQL Multi-AZ deployment
-  - S3 buckets with encryption and policies
-  - PostgreSQL session storage configuration
-  - Application Load Balancer and auto-scaling groups
+### ระยะที่ 1: โครงสร้างพื้นฐานและรากฐาน (สัปดาห์ 1–3)
+**ผลส่งมอบ:**
+- **ตั้งค่าโครงสร้างพื้นฐานคลาวด์ของ AWS**
+  - กำหนดค่า VPC, ซับเน็ต, Security Group
+  - ปรับใช้ RDS PostgreSQL แบบ Multi-AZ
+  - ตั้งค่า S3 พร้อมการเข้ารหัสและนโยบาย
+  - ตั้งค่าที่เก็บเซสชันบน PostgreSQL
+  - Application Load Balancer และ Auto Scaling Groups
 
-- **Development Environment & Architecture**
-  - CI/CD pipeline with AWS CodePipeline
-  - Firebase project setup and configuration
-  - Terraform infrastructure as code
-  - Database schema design and migration scripts
-  - API architecture and OpenAPI documentation
-  - Security framework and encryption setup
+- **สภาพแวดล้อมการพัฒนาและสถาปัตยกรรม**
+  - สายงาน CI/CD ด้วย AWS CodePipeline
+  - ตั้งค่าและคอนฟิกโครงการ Firebase
+  - โครงสร้างพื้นฐานเป็นโค้ดด้วย Terraform
+  - ออกแบบสคีมาฐานข้อมูลและสคริปต์ไมเกรชัน
+  - สถาปัตยกรรม API และเอกสาร OpenAPI
+  - กรอบงานความปลอดภัยและการตั้งค่าการเข้ารหัส
 
-- **Project Foundation**
-  - Flutter project scaffolding with tablet-optimized architecture
-  - Next.js 14+ admin panel setup with TypeScript configuration
-  - TypeScript backend API with Express.js framework
-  - Development, staging, production environments
-  - Monitoring and logging infrastructure
+- **รากฐานโครงการ**
+  - โครงร่างโปรเจ็กต์ Flutter ที่ปรับสำหรับแท็บเล็ต
+  - ตั้งค่าแผงผู้ดูแล Next.js 14+ พร้อม TypeScript
+  - แบ็กเอนด์ API แบบ TypeScript ด้วย Express.js
+  - สภาพแวดล้อม Development, Staging, Production
+  - โครงสร้างการติดตามและระบบบันทึก
 
-### Phase 2: Backend API Development (Weeks 4-7)
-**Deliverables:**
-- **TypeScript Backend API Services**
-  - Authentication service with Thai ID validation (Express + TypeScript)
-  - Meeting workflow API with WebSocket support (Socket.io + TypeScript)
-  - Document management API with S3 integration (AWS SDK v3 + TypeScript)
-  - User management API with RBAC (TypeScript interfaces and guards)
-  - Firebase Cloud Messaging (FCM) integration for push notifications
+### ระยะที่ 2: พัฒนา Backend API (สัปดาห์ 4–7)
+**ผลส่งมอบ:**
+- **บริการ API ฝั่งแบ็กเอนด์ด้วย TypeScript**
+  - บริการพิสูจน์ตัวตนพร้อมตรวจเลขบัตรประชาชนไทย (Express + TypeScript)
+  - API เวิร์กโฟลว์การประชุมพร้อม WebSocket (Socket.io + TypeScript)
+  - API จัดการเอกสารเชื่อมต่อ S3 (AWS SDK v3 + TypeScript)
+  - API จัดการผู้ใช้พร้อม RBAC (อินเทอร์เฟซและตัวป้องกันใน TypeScript)
+  - เชื่อมต่อ Firebase Cloud Messaging (FCM) สำหรับการแจ้งเตือน
 
-- **Database Implementation**
-  - PostgreSQL schema with TypeScript models (Prisma/TypeORM)
-  - Type-safe data access layers and repository patterns
-  - Database migration scripts with TypeScript
-  - Performance optimization and indexing strategies
-  - Backup and disaster recovery procedures
+- **การใช้งานฐานข้อมูล**
+  - สคีมา PostgreSQL พร้อมโมเดล TypeScript (Prisma/TypeORM)
+  - เลเยอร์เข้าถึงข้อมูลแบบปลอดภัยเชิงชนิด และรูปแบบ Repository
+  - สคริปต์ไมเกรชันฐานข้อมูลด้วย TypeScript
+  - เพิ่มประสิทธิภาพและกลยุทธ์การทำดัชนี
+  - ขั้นตอนสำรองและกู้คืนข้อมูล
 
-### Phase 3: Flutter Mobile App Development (Weeks 6-9)
-**Deliverables:**
-- **Authentication & Security**
-  - Thai National ID login implementation
-  - Digital signature capture system
-  - Biometric authentication integration
-  - Secure offline data storage
+### ระยะที่ 3: พัฒนาแอปมือถือ Flutter (สัปดาห์ 6–9)
+**ผลส่งมอบ:**
+- **การพิสูจน์ตัวตนและความปลอดภัย**
+  - ลงชื่อเข้าใช้ด้วยเลขบัตรประชาชนไทย
+  - ระบบจับลายเซ็นดิจิทัล
+  - เชื่อมต่อการยืนยันตัวตนด้วยไบโอเมตริกซ์
+  - จัดเก็บข้อมูลออฟไลน์อย่างปลอดภัย
 
-- **Core Mobile Features**
-  - Mayor workflow ("Requests" and "Events" modules)
-  - Council member workflow and responses
-  - Document viewer with offline capabilities
-  - Calendar integration and Firebase push notifications
-  - Real-time sync with backend APIs
-  - Firebase Analytics integration for usage tracking
+- **คุณสมบัติหลักของมือถือ**
+  - เวิร์กโฟลว์นายกเทศมนตรี (โมดูล "Requests" และ "Events")
+  - เวิร์กโฟลว์สมาชิกสภาและการตอบรับ
+  - ตัวดูเอกสารพร้อมความสามารถออฟไลน์
+  - เชื่อมต่อปฏิทินและการแจ้งเตือนผ่าน Firebase
+  - ซิงก์แบบเรียลไทม์กับแบ็กเอนด์ API
+  - เชื่อมต่อ Firebase Analytics เพื่อติดตามการใช้งาน
 
-### Phase 4: Admin Panel Development (Weeks 7-10)
-**Deliverables:**
-- **Next.js Admin Panel Development**
-  - Server-side rendered meeting management interface
-  - User management with individual registration and role assignment
-  - User group creation and management interface
-  - Meeting creation with flexible user/group invitation system
-  - Document upload with drag-drop and progress tracking
-  - Real-time analytics dashboard with TypeScript charts
-  - Audit trail visualization and compliance reporting tools
+### ระยะที่ 4: พัฒนาแผงผู้ดูแล (สัปดาห์ 7–10)
+**ผลส่งมอบ:**
+- **พัฒนาแผงผู้ดูแล Next.js**
+  - อินเทอร์เฟซจัดการการประชุมแบบ SSR
+  - จัดการผู้ใช้พร้อมลงทะเบียนรายบุคคลและกำหนดบทบาท
+  - อินเทอร์เฟซสร้างและจัดการกลุ่มผู้ใช้
+  - สร้างการประชุมพร้อมระบบเชิญผู้ใช้/กลุ่มอย่างยืดหยุ่น
+  - อัปโหลดเอกสารแบบลากและวางพร้อมแสดงความคืบหน้า
+  - แดชบอร์ดวิเคราะห์แบบเรียลไทม์ด้วยกราฟ TypeScript
+  - มุมมอง Audit Trail และเครื่องมือรายงานการปฏิบัติตาม
 
-- **Integration & Optimization**
-  - Type-safe API integration with auto-generated TypeScript clients
-  - Next.js performance optimization (SSR, ISR, code splitting)
-  - S3 CDN optimization for document delivery
-  - Responsive design with mobile-first approach
-  - TypeScript strict mode and comprehensive type checking
+- **การบูรณาการและเพิ่มประสิทธิภาพ**
+  - เชื่อมต่อ API แบบปลอดภัยเชิงชนิดด้วยไคลเอนต์ TypeScript ที่สร้างอัตโนมัติ
+  - ปรับประสิทธิภาพ Next.js (SSR, ISR, แยกโค้ด)
+  - ปรับ CloudFront/S3 CDN เพื่อการส่งเอกสาร
+  - ดีไซน์ตอบสนองด้วยแนวทาง Mobile-first
+  - เปิดโหมดเข้มงวดของ TypeScript และตรวจชนิดอย่างครอบคลุม
 
-### Phase 5: Testing & Deployment (Weeks 11-14)
-**Deliverables:**
-- **Comprehensive Testing**
-  - Government security compliance testing
-  - Load testing and performance validation
-  - Mobile app testing across tablet devices
-  - Integration testing of all system components
-  - Penetration testing and security audit
+### ระยะที่ 5: ทดสอบและปรับใช้ (สัปดาห์ 11–14)
+**ผลส่งมอบ:**
+- **การทดสอบครบถ้วน**
+  - ทดสอบการปฏิบัติตามความปลอดภัยระดับภาครัฐ
+  - ทดสอบโหลดและยืนยันประสิทธิภาพ
+  - ทดสอบแอปมือถือบนอุปกรณ์แท็บเล็ตหลากหลาย
+  - ทดสอบการเชื่อมต่อระหว่างส่วนประกอบทั้งหมด
+  - ทดสอบการเจาะระบบและตรวจสอบความปลอดภัย
 
-- **Production Deployment**
-  - Production infrastructure deployment
-  - SSL certificate and domain configuration
-  - Database migration and data seeding
-  - Mobile app store submission (iOS/Android)
-  - User training documentation and materials
-  - Go-live support and monitoring setup
+- **ปรับใช้สู่การผลิต**
+  - ปรับใช้โครงสร้างพื้นฐานสู่โปรดักชัน
+  - ตั้งค่าใบรับรอง SSL และโดเมน
+  - ไมเกรตฐานข้อมูลและใส่ข้อมูลตั้งต้น
+  - ส่งแอปขึ้นสโตร์ (iOS/Android)
+  - เอกสารและวัสดุฝึกอบรมผู้ใช้
+  - สนับสนุนการ Go-live และตั้งค่าการติดตาม
 
-### Phase 6: Launch Support & Handover (Weeks 15-16)
-**Deliverables:**
-- User training and onboarding sessions
-- System administration documentation
-- 24/7 monitoring and alerting setup
-- Performance baseline establishment
-- Knowledge transfer and operational handover
+### ระยะที่ 6: สนับสนุนการเปิดใช้งานและส่งมอบ (สัปดาห์ 15–16)
+**ผลส่งมอบ:**
+- อบรมและแนะนำการใช้งานผู้ใช้
+- เอกสารการดูแลระบบ
+- ตั้งค่าการติดตามและแจ้งเตือนตลอด 24/7
+- ตั้งค่าเส้นฐานประสิทธิภาพ
+- ส่งมอบความรู้และถ่ายโอนการปฏิบัติงาน
 
-## Success Metrics
+## ตัวชี้วัดความสำเร็จ
 
-### Immediate Success Indicators
-- **Mayor Approval Time:** <4 hours average during business hours
-- **Council Response Rate:** >90% within 48 hours
-- **App Performance:** >95% successful task completion rate
-- **Digital Signature Success:** 100% capture rate
+### ตัวบ่งชี้ความสำเร็จทันที
+- **เวลาอนุมัติโดยนายก:** เฉลี่ย <4 ชั่วโมงในเวลาทำการ
+- **อัตราการตอบกลับของสมาชิกสภา:** >90% ภายใน 48 ชั่วโมง
+- **ประสิทธิภาพแอป:** อัตราสำเร็จของงาน >95%
+- **ความสำเร็จของลายเซ็นดิจิทัล:** อัตราการจับลายเซ็น 100%
 
-### Long-term Success Measures
-- **Process Efficiency:** Meeting creation to final response <24 hours
-- **User Adoption:** 95% active usage within 3 months
-- **Error Reduction:** <2% technical failure rate
-- **Cost Savings:** 80% reduction in administrative overhead
+### ตัวชี้วัดความสำเร็จระยะยาว
+- **ประสิทธิภาพกระบวนการ:** จากสร้างการประชุมถึงคำตอบสุดท้าย <24 ชั่วโมง
+- **การยอมรับใช้งานของผู้ใช้:** ใช้งานจริง 95% ภายใน 3 เดือน
+- **การลดข้อผิดพลาด:** อัตราความล้มเหลวทางเทคนิค <2%
+- **ประหยัดต้นทุน:** ลดค่าใช้จ่ายด้านธุรการ 80%
 
-## Project Team & Responsibilities
+## ทีมโครงการและความรับผิดชอบ
 
-### Our Team Structure
-- **Technical Lead/Architect:** Overall system architecture and technology decisions
-- **DevOps Engineer:** AWS infrastructure, CI/CD, and deployment automation
-- **Backend Developer:** TypeScript API development, database design, and server-side logic
-- **Flutter Developer:** Cross-platform tablet app development and optimization
-- **Frontend Developer:** Next.js + TypeScript admin panel development
-- **Database Engineer:** PostgreSQL optimization, migration scripts, and performance tuning
-- **Security Specialist:** Government compliance, encryption, and penetration testing
-- **QA Engineer:** Testing automation, mobile testing, and quality assurance
-- **Project Manager:** Timeline management, client coordination, and delivery oversight
+### โครงสร้างทีมของเรา
+- **Technical Lead/Architect:** กำกับสถาปัตยกรรมระบบและตัดสินใจด้านเทคโนโลยี
+- **DevOps Engineer:** โครงสร้างพื้นฐาน AWS, CI/CD และการปรับใช้
+- **Backend Developer:** พัฒนา API แบบ TypeScript ออกแบบฐานข้อมูล และตรรกะฝั่งเซิร์ฟเวอร์
+- **Flutter Developer:** พัฒนาและปรับแต่งแอปแท็บเล็ตข้ามแพลตฟอร์ม
+- **Frontend Developer:** พัฒนาแผงผู้ดูแลด้วย Next.js + TypeScript
+- **Database Engineer:** ปรับแต่ง PostgreSQL สคริปต์ไมเกรชัน และประสิทธิภาพ
+- **Security Specialist:** การปฏิบัติตามข้อกำหนดภาครัฐ การเข้ารหัส และการทดสอบเจาะระบบ
+- **QA Engineer:** อัตโนมัติการทดสอบ ทดสอบมือถือ และประกันคุณภาพ
+- **Project Manager:** บริหารไทม์ไลน์ ประสานงานลูกค้า และกำกับการส่งมอบ
 
-### Client Responsibilities
-- Access to existing admin panel and technical specifications
-- Government stakeholder coordination for requirements validation
-- User testing coordination with mayors and council members
-- Security clearance and infrastructure access for development team
-- Final acceptance testing and deployment approval
+### ความรับผิดชอบของลูกค้า
+- การเข้าถึงแผงผู้ดูแลที่มีอยู่และสเปกทางเทคนิค
+- ประสานงานผู้มีส่วนได้ส่วนเสียภาครัฐเพื่อยืนยันความต้องการ
+- ประสานงานการทดสอบผู้ใช้กับนายกและสมาชิกสภา
+- การผ่านความปลอดภัยและการเข้าถึงโครงสร้างพื้นฐานสำหรับทีมพัฒนา
+- การทดสอบยอมรับขั้นสุดท้ายและอนุมัติการปรับใช้
 
-## Investment & Next Steps
+## งบลงทุนและขั้นตอนถัดไป
 
-### Project Investment
-**Total Investment:** [Quote based on final requirements]
+### งบลงทุนโครงการ
+**งบรวม:** [ใบเสนอราคาตามความต้องการสุดท้าย]
 
-**Payment Structure:**
-- 30% upon project initiation
-- 40% upon core functionality completion (Week 7)
-- 30% upon final delivery and acceptance
+**โครงสร้างการชำระเงิน:**
+- 30% เมื่อเริ่มโครงการ
+- 40% เมื่อเสร็จคุณสมบัติหลัก (สัปดาห์ที่ 7)
+- 30% เมื่อส่งมอบขั้นสุดท้ายและผ่านการยอมรับ
 
-### Immediate Next Steps
-1. **Technical Discovery Session** - Assess existing admin panel architecture
-2. **Government Compliance Review** - Validate digital signature and security requirements
-3. **Team Assembly** - Finalize development team with government project experience
-4. **Project Kickoff** - Establish communication protocols and weekly sprint planning
+### ขั้นตอนถัดไปทันที
+1. **Technical Discovery Session** - ประเมินสถาปัตยกรรมแผงผู้ดูแลที่มีอยู่
+2. **Government Compliance Review** - ยืนยันข้อกำหนดด้านลายเซ็นดิจิทัลและความปลอดภัย
+3. **Team Assembly** - จัดชุดทีมพัฒนาที่มีประสบการณ์โครงการภาครัฐ
+4. **Project Kickoff** - กำหนดช่องทางสื่อสารและวางแผนสปรินต์รายสัปดาห์
 
 ---
 
-**Ready to eliminate paper-based inefficiencies and transform your municipal meeting management?**
+**พร้อมที่จะขจัดความไม่มีประสิทธิภาพจากกระดาษ และยกระดับการบริหารการประชุมของคุณหรือยัง?**
 
-This scope of work represents a comprehensive digital transformation that will position your government as a leader in efficient, secure, and environmentally responsible governance. Our experienced team specializes in government-compliant applications and understands the unique requirements of municipal workflows.
+ขอบเขตงานฉบับนี้เป็นการเปลี่ยนผ่านสู่ดิจิทัลอย่างครบถ้วน ซึ่งจะยกระดับหน่วยงานของคุณให้เป็นผู้นำด้านการบริหารที่มีประสิทธิภาพ ปลอดภัย และใส่ใจสิ่งแวดล้อม ทีมงานมากประสบการณ์ของเรามีความเชี่ยวชาญด้านแอปที่ปฏิบัติตามข้อกำหนดภาครัฐ และเข้าใจความต้องการเฉพาะของเวิร์กโฟลว์ในองค์กรปกครองส่วนท้องถิ่นเป็นอย่างดี
 
-**Contact us to discuss your specific requirements and begin this transformative project.**
+**ติดต่อเราเพื่อพูดคุยความต้องการเฉพาะของคุณและเริ่มโครงการทรานส์ฟอร์มนี้ได้เลย**
