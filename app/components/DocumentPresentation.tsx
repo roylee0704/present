@@ -1,8 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { FileText, Menu, X, ExternalLink } from 'lucide-react';
 import MarkdownRenderer from './MarkdownRenderer';
+import LanguageToggle from './LanguageToggle';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface DocumentItem {
   id: string;
@@ -12,75 +14,86 @@ interface DocumentItem {
   priority: 'high' | 'medium' | 'low';
 }
 
-const documents: DocumentItem[] = [
-  {
-    id: 'brief',
-    title: 'Project Brief',
-    description: 'Comprehensive project overview and problem statement for the Government Meeting Management Mobile Application',
-    fileName: 'brief.md',
-    priority: 'high'
-  },
-  {
-    id: 'prd',
-    title: 'Product Requirements Document',
-    description: 'Detailed technical and functional requirements for the Flutter tablet application',
-    fileName: 'prd.md',
-    priority: 'high'
-  },
-  {
-    id: 'scope-of-work',
-    title: 'Scope of Work',
-    description: 'Complete project deliverables, timeline, and implementation strategy',
-    fileName: 'scope-of-work.md',
-    priority: 'high'
-  },
-  {
-    id: 'quotation',
-    title: 'Project Quotation',
-    description: 'Detailed pricing breakdown and investment allocation for the digital transformation project',
-    fileName: 'quotation.md',
-    priority: 'medium'
-  },
-  {
-    id: 'audit',
-    title: 'Security & Compliance Audit',
-    description: 'Comprehensive audit plan covering security, compliance, performance, and audit trail requirements',
-    fileName: 'audit.md',
-    priority: 'medium'
-  },
-  {
-    id: 'thai-government-compliance',
-    title: 'Thai Government Compliance',
-    description: 'Legal framework compliance including ETA, PDPA, and Cybersecurity Act requirements',
-    fileName: 'thai-government-compliance.md',
-    priority: 'medium'
-  },
-  {
-    id: 'discovery-recovery-checklist',
-    title: 'Discovery & Recovery Checklist',
-    description: 'Technical discovery and disaster recovery procedures for government systems',
-    fileName: 'discovery-recovery-checklist.md',
-    priority: 'low'
-  },
-  {
-    id: 'eta-checklist',
-    title: 'ETA Compliance Checklist',
-    description: 'Electronic Transactions Act compliance verification and implementation checklist',
-    fileName: 'eta-checklist.md',
-    priority: 'low'
-  },
-  {
-    id: 'pdpa-audit-checklist',
-    title: 'PDPA Audit Checklist',
-    description: 'Personal Data Protection Act compliance audit and verification procedures',
-    fileName: 'pdpa-audit-checklist.md',
-    priority: 'low'
-  }
-];
-
 export default function DocumentPresentation() {
+  const { t } = useLanguage();
+
+  const documents = useMemo((): DocumentItem[] => [
+    {
+      id: 'brief',
+      title: t('doc.brief.title'),
+      description: t('doc.brief.description'),
+      fileName: 'brief.md',
+      priority: 'high'
+    },
+    {
+      id: 'prd',
+      title: t('doc.prd.title'),
+      description: t('doc.prd.description'),
+      fileName: 'prd.md',
+      priority: 'high'
+    },
+    {
+      id: 'scope-of-work',
+      title: t('doc.scope-of-work.title'),
+      description: t('doc.scope-of-work.description'),
+      fileName: 'scope-of-work.md',
+      priority: 'high'
+    },
+    {
+      id: 'quotation',
+      title: t('doc.quotation.title'),
+      description: t('doc.quotation.description'),
+      fileName: 'quotation.md',
+      priority: 'medium'
+    },
+    {
+      id: 'audit',
+      title: t('doc.audit.title'),
+      description: t('doc.audit.description'),
+      fileName: 'audit.md',
+      priority: 'medium'
+    },
+    {
+      id: 'thai-government-compliance',
+      title: t('doc.thai-government-compliance.title'),
+      description: t('doc.thai-government-compliance.description'),
+      fileName: 'thai-government-compliance.md',
+      priority: 'medium'
+    },
+    {
+      id: 'discovery-recovery-checklist',
+      title: t('doc.discovery-recovery-checklist.title'),
+      description: t('doc.discovery-recovery-checklist.description'),
+      fileName: 'discovery-recovery-checklist.md',
+      priority: 'low'
+    },
+    {
+      id: 'eta-checklist',
+      title: t('doc.eta-checklist.title'),
+      description: t('doc.eta-checklist.description'),
+      fileName: 'eta-checklist.md',
+      priority: 'low'
+    },
+    {
+      id: 'pdpa-audit-checklist',
+      title: t('doc.pdpa-audit-checklist.title'),
+      description: t('doc.pdpa-audit-checklist.description'),
+      fileName: 'pdpa-audit-checklist.md',
+      priority: 'low'
+    }
+  ], [t]); // Only recreate when translations change
+
   const [selectedDoc, setSelectedDoc] = useState<DocumentItem>(documents[0]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  // Update selected document when language changes to refresh the document with new translations
+  useEffect(() => {
+    const currentDocId = selectedDoc.id;
+    const updatedDoc = documents.find(doc => doc.id === currentDocId);
+    if (updatedDoc) {
+      setSelectedDoc(updatedDoc);
+    }
+  }, [documents, selectedDoc.id]); // Now we can safely depend on documents since it's memoized
 
   const priorityColors = {
     high: 'border-l-red-500 bg-red-50 dark:bg-red-950/20',
@@ -112,19 +125,22 @@ export default function DocumentPresentation() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-                  Government Meeting Management
+                  {t('app.title')}
                 </h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Project Documentation Portal
+                  {t('app.subtitle')}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-            <span>Titvn AI Co., Ltd</span>
-            <span>•</span>
-            <span>September 2025</span>
+          <div className="flex items-center gap-4">
+            <LanguageToggle />
+            <div className="hidden md:flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+              <span>{t('company.name')}</span>
+              <span>•</span>
+              <span>{t('date')}</span>
+            </div>
           </div>
         </div>
       </header>
@@ -139,10 +155,10 @@ export default function DocumentPresentation() {
           <div className="flex flex-col h-full">
             <div className="p-6 border-b border-gray-200 dark:border-gray-700">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Project Documents
+                {t('sidebar.title')}
               </h2>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                Select a document to view its content
+                {t('sidebar.subtitle')}
               </p>
             </div>
 
@@ -186,19 +202,19 @@ export default function DocumentPresentation() {
 
             <div className="p-4 border-t border-gray-200 dark:border-gray-700">
               <div className="text-xs text-gray-500 dark:text-gray-400">
-                <p className="font-medium mb-1">Priority Legend:</p>
+                <p className="font-medium mb-1">{t('priority.legend')}</p>
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                    <span>High - Core project documents</span>
+                    <span>{t('priority.high')}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                    <span>Medium - Implementation details</span>
+                    <span>{t('priority.medium')}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span>Low - Compliance checklists</span>
+                    <span>{t('priority.low')}</span>
                   </div>
                 </div>
               </div>
@@ -233,13 +249,13 @@ export default function DocumentPresentation() {
                     inline-flex items-center px-3 py-1 rounded-full text-sm font-medium
                     ${priorityBadges[selectedDoc.priority]}
                   `}>
-                    {selectedDoc.priority.toUpperCase()} PRIORITY
+                    {t(`priority.${selectedDoc.priority}.label`)}
                   </span>
                   <a
                     href={`/docs/${selectedDoc.fileName}`}
                     target="_blank"
                     className="p-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
-                    title="Open in new tab"
+                    title={t('action.open_new_tab')}
                   >
                     <ExternalLink size={20} />
                   </a>

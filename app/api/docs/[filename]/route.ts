@@ -11,6 +11,8 @@ export async function GET(
 ) {
   try {
     const { filename } = await params;
+    const { searchParams } = new URL(request.url);
+    const lang = searchParams.get('lang') || 'en';
 
     // Security: Only allow markdown files and validate filename
     if (!filename.endsWith('.md') || filename.includes('..') || filename.includes('/')) {
@@ -20,8 +22,17 @@ export async function GET(
       );
     }
 
-    // Read the markdown file from the docs directory
-    const docsPath = join(process.cwd(), 'docs', filename);
+    // Validate language parameter
+    if (lang !== 'en' && lang !== 'th') {
+      return NextResponse.json(
+        { error: 'Invalid language parameter' },
+        { status: 400 }
+      );
+    }
+
+    // Determine the correct docs directory based on language
+    const docsDirectory = lang === 'th' ? 'docs_th' : 'docs';
+    const docsPath = join(process.cwd(), docsDirectory, filename);
     const content = await readFile(docsPath, 'utf8');
 
     return new NextResponse(content, {

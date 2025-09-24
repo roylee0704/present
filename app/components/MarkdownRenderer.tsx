@@ -7,6 +7,7 @@ import remarkBreaks from 'remark-breaks';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { FileText, AlertCircle } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface MarkdownRendererProps {
   fileName: string;
@@ -16,6 +17,7 @@ export default function MarkdownRenderer({ fileName }: MarkdownRendererProps) {
   const [content, setContent] = useState<string>('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { language, t } = useLanguage();
 
   useEffect(() => {
     async function fetchMarkdown() {
@@ -23,7 +25,7 @@ export default function MarkdownRenderer({ fileName }: MarkdownRendererProps) {
         setLoading(true);
         setError(null);
 
-        const response = await fetch(`/api/docs/${fileName}`);
+        const response = await fetch(`/api/docs/${fileName}?lang=${language}`);
         if (!response.ok) {
           throw new Error(`Failed to fetch document: ${response.statusText}`);
         }
@@ -38,7 +40,7 @@ export default function MarkdownRenderer({ fileName }: MarkdownRendererProps) {
     }
 
     fetchMarkdown();
-  }, [fileName]);
+  }, [fileName, language]);
 
   if (loading) {
     return (
@@ -47,7 +49,7 @@ export default function MarkdownRenderer({ fileName }: MarkdownRendererProps) {
           <div className="animate-spin">
             <FileText size={24} />
           </div>
-          <span className="text-lg">Loading document...</span>
+          <span className="text-lg">{t('loading.document')}</span>
         </div>
       </div>
     );
@@ -59,14 +61,14 @@ export default function MarkdownRenderer({ fileName }: MarkdownRendererProps) {
         <div className="text-center">
           <AlertCircle className="mx-auto text-red-500 mb-4" size={48} />
           <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-            Error Loading Document
+            {t('error.title')}
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">{error}</p>
           <button
             onClick={() => window.location.reload()}
             className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
           >
-            Retry
+            {t('action.retry')}
           </button>
         </div>
       </div>
