@@ -67,7 +67,7 @@ const translations = {
     // Header
     'app.title': 'ระบบจัดการการประชุมภาครัฐ',
     'app.subtitle': 'พอร์ทัลเอกสารโครงการ',
-    'company.name': 'บริษัท ทิตวีเอ็น เอไอ จำกัด',
+    'company.name': 'Titvn AI Co., Ltd',
     'date': 'กันยายน 2568',
 
     // Sidebar
