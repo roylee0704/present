@@ -153,7 +153,7 @@ export default function MarkdownRenderer({ fileName }: MarkdownRendererProps) {
           ul: ({ children, ...props }) => (
             <ul
               {...props}
-              className="text-sm sm:text-base lg:text-lg text-gray-700 mb-4 sm:mb-6 pl-4 sm:pl-5 leading-relaxed space-y-1 sm:space-y-2"
+              className="text-sm sm:text-base lg:text-lg text-gray-700 mb-4 sm:mb-6 pl-4 sm:pl-5 leading-relaxed space-y-1 sm:space-y-2 list-disc list-outside"
               style={{
                 fontFamily: 'Georgia, "Times New Roman", serif'
               }}
@@ -164,7 +164,7 @@ export default function MarkdownRenderer({ fileName }: MarkdownRendererProps) {
           ol: ({ children, ...props }) => (
             <ol
               {...props}
-              className="text-sm sm:text-base lg:text-lg text-gray-700 mb-4 sm:mb-6 pl-4 sm:pl-5 leading-relaxed space-y-1 sm:space-y-2"
+              className="text-sm sm:text-base lg:text-lg text-gray-700 mb-4 sm:mb-6 pl-4 sm:pl-5 leading-relaxed space-y-1 sm:space-y-2 list-decimal list-outside"
               style={{
                 fontFamily: 'Georgia, "Times New Roman", serif'
               }}
@@ -229,12 +229,8 @@ export default function MarkdownRenderer({ fileName }: MarkdownRendererProps) {
             </td>
           ),
           // Code styling
-          code: ({ inline, className, children, ...props }: {
-            inline?: boolean;
-            className?: string;
-            children: React.ReactNode;
-            [key: string]: unknown;
-          }) => {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          code: ({ inline, className, children, ...props }: any) => {
             const match = /language-(\w+)/.exec(className || '');
             const language = match ? match[1] : '';
 
