@@ -1,78 +1,49 @@
-# Project Brief: Government Meeting Management Mobile Application
+# Project Brief: Government Meeting Management Mobile Application (500K THB MVP)
 
 ## Executive Summary
 
-A government meeting management tablet application built with Flutter that digitizes and streamlines the municipal meeting approval and attendance process for iPad/tablet use. The app solves the inefficiency of paper-based meeting notifications and manual approval workflows by providing a secure digital platform optimized for tablet viewing of meeting documents during actual meetings. Targeting government officials specifically Mayors and Council Members who prefer tablet devices for document review, the application enables admins to create meetings with attachments, route them through a mayoral approval workflow with digital signatures, and facilitate council member responses with easy access to meeting materials during meeting sessions. Users authenticate using their Thai National ID (format: 9 9999 99999 99 9) and admin-generated passwords, with mandatory password changes on first login. The key value proposition is transforming traditional government meeting coordination from manual, paper-based processes to a secure, tablet-optimized digital workflow that ensures compliance, reduces paper waste, and provides instant access to meeting documents and attachments during live meetings.
+A streamlined government meeting management tablet application built with Flutter that provides council members with instant, secure access to approved meeting information and documents. **This cost-efficient 500K THB MVP reduces the original 2M THB budget by 75%** by focusing exclusively on council member needs: viewing approved meetings, downloading documents securely, and accessing materials offline during sessions. Targeting council members who use tablets for document review during meetings, the application eliminates paper distribution costs while ensuring secure digital access to meeting materials. Users authenticate using their Thai National ID (format: 9 9999 99999 99 9) with admin-generated passwords and mandatory first-time password changes. The key value proposition is **transforming council member meeting preparation from paper-based distribution to instant digital access, cutting preparation costs by 80% while providing superior tablet-optimized document viewing during live meetings.**
 
 ## Problem Statement
 
 **Current State and Pain Points:**
-The municipal meeting management process is entirely manual and paper-based, creating significant inefficiencies and delays. Admins must prepare meeting materials, print multiple copies, physically deliver documents to the Mayor for signature approval, then print sufficient copies for all council members and physically mail them to each member's residence. This is followed by phone calls to confirm receipt, waiting for signed responses to be mailed back, and tracking attendance decisions manually.
+Council members receive meeting notifications and materials through manual, paper-based processes. Admins must print multiple copies of meeting documents and physically mail them to each council member's residence, followed by phone calls to confirm receipt. Council members must then carry physical folders to meetings, risk forgetting materials, and cannot easily search or navigate documents during sessions.
 
 **Impact of the Problem:**
-- **Time Waste:** Meeting preparation can take 5-7 days minimum due to physical delivery and mail cycles
-- **Resource Cost:** Significant printing, postage, and administrative labor costs per meeting
+- **Resource Waste:** Significant printing and postage costs per meeting for council member distribution
 - **Environmental Impact:** Hundreds of pages printed per meeting across multiple participants
-- **Inefficient Tracking:** No real-time visibility into approval status or attendance confirmations
-- **Meeting Day Challenges:** Council members must carry physical folders, risk forgetting materials, and cannot easily search or navigate documents during meetings
-- **Delayed Decision Making:** Administrative bottlenecks delay meeting scheduling and reduce government responsiveness
+- **Meeting Day Inefficiency:** Council members must carry physical folders, risk forgetting materials, and cannot easily search documents
+- **Delayed Access:** Council members wait 3-5 days for postal delivery before they can review meeting materials
+- **Poor Document Management:** Physical documents are difficult to organize, search, and reference during meetings
+- **Administrative Burden:** Staff spend hours coordinating printing, mailing, and phone confirmations
 
 **Why Existing Solutions Fall Short:**
-Generic meeting software doesn't address government-specific approval hierarchies, signature requirements, or the tablet-optimized document viewing needed during actual meetings. Email-based solutions lack the security, audit trails, and structured workflows required for municipal governance.
+Generic meeting software doesn't address government-specific security requirements or the tablet-optimized document viewing needed during actual meetings. Email-based solutions lack the security, offline capabilities, and structured workflows required for municipal governance.
 
 **Urgency and Importance:**
-With increasing pressure for government digitization and efficiency, this manual process represents a significant operational bottleneck that affects public service delivery timelines and wastes taxpayer resources on unnecessary administrative overhead.
+With government pressure for cost reduction and digitization, the manual paper distribution process represents significant waste of taxpayer resources. This 500K THB solution delivers immediate value to council members while reducing ongoing operational costs by 80%.
 
 ## Proposed Solution
 
 **Core Concept and Approach:**
-A Flutter-based tablet application that digitizes the entire municipal meeting workflow from creation to attendance tracking. The solution creates a secure digital pipeline where admins create meetings in the existing admin panel, which then flows to the Mayor's tablet for digital approval with signature capture, and finally notifies council members on their tablets for acknowledgment, response, and meeting day document access.
+A Flutter-based tablet application focused exclusively on council member needs: secure access to approved meetings, high-quality document viewing, and offline access during meetings. Admins create and approve meetings through the existing admin panel, which then instantly notifies council members on their tablets for acknowledgment and meeting day document access.
 
 **Key Differentiators from Existing Solutions:**
-- **Government-Specific Workflow:** Purpose-built approval hierarchy (Admin → Mayor → Council Members) with role-based permissions
-- **Thai Government Compliance:** Thai National ID authentication (9 9999 99999 99 9 format) with mandatory password management
+- **Government-Specific Security:** Thai National ID authentication (9 9999 99999 99 9 format) with mandatory password management
 - **Tablet-Optimized Document Experience:** Superior PDF/Word/Excel/image viewing optimized for meeting day usage on iPads/tablets
-- **Digital Signature Integration:** Finger-based signature capture for legal compliance and audit trails
 - **Offline-Capable Meeting Access:** Council members can access meeting materials during meetings without internet dependency
+- **Cost-Effective Architecture:** Streamlined workflow eliminates complex approval chains, reducing development costs by 75%
+- **Instant Distribution:** Replaces 3-5 day postal delivery with immediate digital notification
 
 **Why This Solution Will Succeed:**
-Unlike generic meeting tools, this solution addresses the specific pain points of government meeting management: formal approval chains, signature requirements, secure authentication, and tablet-optimized document viewing during actual meetings. The solution eliminates physical mail cycles, reduces preparation time from days to hours, and provides real-time tracking of the entire approval process.
+By focusing exclusively on council member needs and leveraging the existing admin panel for meeting creation, this solution delivers immediate value at 25% of the original budget. Council members get instant access to meeting materials, eliminating 3-5 day postal delays and paper distribution costs, while maintaining government security standards.
 
 **High-Level Vision:**
-Transform municipal meeting management from a 5-7 day manual process involving printing, mailing, and phone calls into a streamlined digital workflow completed within hours, while maintaining government security standards and providing superior document access during meeting sessions.
+Transform council member meeting preparation from a 3-5 day paper distribution process into instant digital access, reducing per-meeting costs by 80% while providing superior document viewing during sessions.
 
 ## Target Users
 
-### Primary User Segment: Mayor
-
-**Demographic/Firmographic Profile:**
-- Municipal government executive
-- Age range: 40-65 years
-- Moderate to advanced tablet/technology comfort level
-- Formal decision-making authority in government
-- Typically manages 10-50 meetings per month
-
-**Current Behaviors and Workflows:**
-- Reviews physical meeting packets delivered by admin staff
-- Signs approval documents manually with pen
-- Must coordinate with admin for scheduling and document distribution
-- Often reviews materials during transit or in between appointments
-- Prefers tablet devices for document review over desktop computers
-
-**Specific Needs and Pain Points:**
-- Needs secure access to meeting materials for review and approval
-- Requires digital signature capability that meets legal standards
-- Must approve/reject meetings with clear reasoning when rejecting
-- Needs quick turnaround capability to avoid bottlenecking the process
-- Requires offline access as internet may not always be available
-
-**Goals They're Trying to Achieve:**
-- Efficiently review and approve meeting agendas without delays
-- Maintain oversight and control over municipal meeting processes
-- Reduce administrative overhead while ensuring compliance
-- Access meeting materials anywhere, anytime on preferred tablet device
-
-### Secondary User Segment: Council Members
+### Primary User Segment: Council Members
 
 **Demographic/Firmographic Profile:**
 - Elected municipal officials
@@ -83,70 +54,111 @@ Transform municipal meeting management from a 5-7 day manual process involving p
 
 **Current Behaviors and Workflows:**
 - Receive physical meeting packets via mail at home
-- Must sign and mail back attendance confirmations
+- Wait 3-5 days for postal delivery
 - Bring physical folders to meetings for reference
 - Often struggle with document organization during meetings
 - Use personal calendars to track meeting schedules
 
 **Specific Needs and Pain Points:**
-- Need easy acknowledgment process for meeting notifications
+- Need instant access to meeting notifications and materials (eliminate postal delays)
 - Require excellent document viewing experience during actual meetings
-- Must provide digital signatures for attendance confirmation
-- Need calendar integration for personal schedule management
-- Require simple respond process (going/declined) with minimal steps
+- Must have offline access as internet may not be available in meeting venues
+- Need simple process for acknowledging receipt of meeting information
+- Require calendar integration for personal schedule management
 
 **Goals They're Trying to Achieve:**
-- Quickly acknowledge and respond to meeting invitations
-- Access all meeting materials easily during meetings on tablet
+- Access meeting materials immediately upon approval (no postal delays)
+- Review documents easily during meetings on tablet
 - Integrate meeting schedules with personal calendar systems
-- Participate efficiently in the digital workflow without technical complexity
+- Participate efficiently in digital workflow without technical complexity
+
+### Secondary User Segment: Administrators
+
+**Demographic/Firmographic Profile:**
+- Municipal government staff
+- Age range: 30-55 years
+- Advanced technology comfort level
+- Full-time administrative role
+- Manage 20-50 meetings per month
+
+**Current Behaviors and Workflows:**
+- Create meetings in existing admin panel
+- Print multiple copies for council member distribution
+- Physically mail documents to each council member
+- Make follow-up phone calls to confirm receipt
+- Manually track meeting participation
+
+**Specific Needs and Pain Points:**
+- Need efficient meeting creation workflow in existing admin panel
+- Require instant digital distribution to replace postal mailing
+- Must track council member acknowledgments without phone calls
+- Need to reduce printing and postage costs significantly
+- Require visibility into who has accessed meeting materials
+
+**Goals They're Trying to Achieve:**
+- Eliminate printing and postal distribution costs
+- Reduce meeting preparation time from days to hours
+- Track council member engagement automatically
+- Provide better service to council members with instant access
 
 ## Goals & Success Metrics
 
 ### Business Objectives
 
-- **Reduce Meeting Preparation Time:** Decrease meeting preparation cycle from 5-7 days to same-day approval and notification
-- **Eliminate Paper-Based Processes:** Achieve 100% digital workflow for meeting distribution and responses within 6 months
-- **Increase Meeting Participation Accuracy:** Achieve 95% response rate to meeting invitations (up from estimated 70-80% with manual process)
-- **Reduce Administrative Overhead:** Decrease admin staff time spent on meeting coordination by 80%
-- **Improve Audit Trail Compliance:** Provide 100% digital audit trail for all meeting approvals and attendances
+- **Reduce Meeting Distribution Costs:** Eliminate 80% of printing and postage expenses through digital distribution
+- **Accelerate Council Member Access:** Provide instant meeting access upon admin approval (vs. 3-5 day postal delivery)
+- **Increase Council Member Engagement:** Achieve 90% meeting acknowledgment rate within 24 hours
+- **Reduce Administrative Overhead:** Decrease admin staff time on distribution coordination by 70%
+- **Deliver Cost-Effective Solution:** Complete implementation for 500K THB (75% reduction from 2M THB original budget)
 
 ### User Success Metrics
 
-- **Mayor Approval Efficiency:** Average time from meeting creation to mayoral approval under 2 hours during business hours
-- **Council Member Response Rate:** 90% of council members acknowledge and respond to meeting invitations within 24 hours
-- **Meeting Day Document Access:** 100% of attendees access meeting materials digitally during meetings (vs. bringing physical copies)
-- **User Adoption Rate:** 95% of eligible government officials actively using the app within 3 months of launch
-- **Digital Signature Completion:** 100% successful digital signature capture rate for approvals and acknowledgments
+- **Council Member Satisfaction:** 90% of council members prefer digital access over paper distribution
+- **Meeting Day Document Access:** 95% of attendees access meeting materials digitally during meetings
+- **Instant Access Adoption:** 85% of council members acknowledge meetings within 2 hours of notification
+- **User Adoption Rate:** 95% of council members actively using the app within 1 month of launch
+- **Offline Usage:** 80% of council members successfully access documents offline during meetings
 
 ### Key Performance Indicators (KPIs)
 
-- **Process Cycle Time:** Meeting creation to final council member response - Target: <24 hours (vs. current 5-7 days)
-- **Mayor Response Time:** Time to approve/reject meetings - Target: <4 hours average during business hours
-- **Council Response Rate:** Percentage responding within 48 hours - Target: >90%
-- **App Session Success:** Successful login and task completion rate - Target: >95%
+- **Distribution Time:** Meeting approval to council member notification - Target: <5 minutes (vs. current 3-5 days)
+- **Acknowledgment Rate:** Percentage acknowledging receipt within 24 hours - Target: >90%
 - **Document Access Rate:** Council members accessing attachments during meetings - Target: >90%
-- **Calendar Integration Usage:** Members adding meetings to personal calendar - Target: >80%
-- **Error Rate:** Failed digital signatures or app crashes - Target: <2%
+- **App Session Success:** Successful login and document viewing rate - Target: >95%
+- **Calendar Integration Usage:** Members adding meetings to personal calendar - Target: >75%
+- **Cost Savings:** Reduction in printing/postage costs per meeting - Target: >80%
+- **Development Budget:** Project completion within 500K THB budget - Target: 100% compliance
 
 ## MVP Scope
 
 ### Core Features (Must Have)
 
 - **Thai National ID Authentication:** Secure login using Thai ID format (9 9999 99999 99 9) with admin-generated passwords and mandatory first-time password change
-- **Role-Based Navigation:**
-  - **Mayor:** "Requests" menu (pending approvals) + "Events" menu (approved meetings)
-  - **Council Members:** "Events" menu only (approved meetings they're invited to)
-- **Mayor Requests Management:** List view of pending meetings requiring approval with meeting details, attachments preview, and approve/reject actions
+- **Council Member Events Dashboard:** Single "Events" view showing all approved meetings assigned to the logged-in council member
+- **Events Organization:**
+  - **Upcoming Tab:** Future meetings with status indicators (Pending Acknowledgment, Acknowledged, Going, Declined)
+  - **Past Tab:** Historical meetings for reference with final status
+- **Meeting Details View:** Comprehensive meeting information including date, time, location, agenda, and description
+- **Digital Signature Capture:** Finger-based signature capture for acknowledgments and attendance responses on tablet
+- **Meeting Acknowledgment:** Digital signature required to acknowledge receipt of meeting notification
+- **Attendance Response System:** Going/Declined response mechanism with digital signature capture
 - **Document Viewing System:** High-quality viewing of PDF, Word, Excel, and image attachments optimized for tablet display with zoom, scroll, and navigation
-- **Mayor Approval Workflow:** Review meeting details in "Requests", approve/reject with digital signature capture (finger-based), provide rejection reasoning, then meeting moves to "Events"
-- **Events List for All Users:** Display approved meetings with different status indicators:
-  - **Mayor:** All approved meetings (read-only after approval)
-  - **Council Members:** Assigned meetings with status (pending acknowledgment, pending response, responded)
-- **Council Member Acknowledgment:** Acknowledge receipt of approved meetings from "Events" list with digital signature capture
-- **Attendance Response System:** Simple Going/Declined response mechanism from "Events" list for council members
+- **Offline Document Access:** Automatic download and caching of meeting materials for offline viewing during meetings (up to 500MB per user, sufficient for 10-15 upcoming meetings)
 - **Calendar Integration:** "Add to Calendar" functionality for accepted meetings
-- **Offline Document Access:** Download and cache meeting materials for offline viewing during meetings
+- **Profile Management:** View profile, change password, logout functionality
+- **Push Notification System:** Real-time notifications for new meeting assignments and updates
+
+### Streamlined Admin Panel Features
+
+- **Meeting Creation Interface:** Simple form for creating meetings with details and document uploads
+- **Council Member Assignment:** Select which council members should receive the meeting notification
+- **Instant Distribution:** One-click distribution to assigned council members' tablets
+- **Basic Status Dashboard:** View which council members have acknowledged receipt and their attendance responses (Going/Declined)
+- **User Management:** Add/edit council member accounts with role assignment
+
+### Scope Note: Simplified Workflow for Cost Efficiency
+
+This 500K THB MVP focuses on council member value by implementing a single-stage workflow where admins directly create and approve meetings for distribution. The mayor approval stage, comprehensive audit systems, and advanced analytics are deferred to Phase 2 to achieve 75% cost reduction while delivering immediate value.
 
 ### Out of Scope for MVP
 
@@ -154,7 +166,6 @@ Transform municipal meeting management from a 5-7 day manual process involving p
 - In-app messaging or chat functionality
 - Meeting minutes or note-taking features
 - Video conferencing integration
-- Advanced reporting or analytics dashboard
 - Multi-language support beyond English/Thai
 - Integration with external calendar systems beyond device calendar
 - Meeting reminder customization
@@ -163,58 +174,52 @@ Transform municipal meeting management from a 5-7 day manual process involving p
 
 ### MVP Success Criteria
 
-The MVP will be considered successful when mayors can efficiently process approval requests through the "Requests" menu, approved meetings properly appear in both users' "Events" menus with appropriate permissions, and the complete workflow (admin creation → mayor "Requests" approval → council "Events" response) completes digitally within 24 hours with 90% task completion rate.
+The MVP will be considered successful when council members can log in securely, view assigned meetings in Upcoming/Past tabs, acknowledge receipt with digital signature, provide Going/Declined responses with signature capture, access high-quality documents on tablets, and use materials offline during meetings - all within 500K THB budget delivering 75% cost reduction from original 2M THB scope.
 
 ## Post-MVP Vision
 
-### Phase 2 Features
+### Phase 2 Features (Path to Full 2M THB Scope)
+
+**Mayor Approval Workflow:**
+- Mayor mobile app with "Requests" approval interface
+- Digital signature capture for mayor approvals/rejections
+- Approval reasoning and rejection workflow
+- Multi-stage approval pipeline (Admin → Mayor → Council Members)
+
+**Comprehensive Audit & Compliance System:**
+- Detailed forensic audit trails for all user actions
+- Tamper-proof logging with government compliance reporting
+- Advanced security and data protection features
+- Legal-grade digital signature verification
+
+**Advanced Analytics & Reporting:**
+- Comprehensive attendance analytics dashboard
+- Meeting participation patterns and insights
+- Admin reporting tools for government transparency
+- Custom report generation and export
+
+**Enhanced Notification System:**
+- Comprehensive inbox notification center
+- Advanced notification management and filtering
+- Email integration and notification preferences
+- Reminder customization and escalation workflows
 
 **Enhanced Document Experience:**
-- Document annotation tools (highlighting, notes, bookmarks) for council members to mark important sections during meeting preparation
-- Advanced search functionality across all meetings and attachments
-- Document version comparison when meeting materials are updated
-
-**Workflow Improvements:**
-- Batch approval capabilities for mayors handling multiple routine meetings
-- Meeting template system for recurring meeting types
-- Automated reminders and escalation notifications for pending approvals/responses
-- Meeting postponement and rescheduling workflows
+- Document annotation tools for highlighting and notes
+- Advanced search across meetings and attachments
+- Document version tracking and comparison
+- Meeting postponement and rescheduling notifications
 
 **Enhanced User Experience:**
-- Thai language localization for full government compliance
-- Advanced digital signature options (stylus support, signature templates)
-- Meeting history and archive functionality with advanced filtering
-- Dashboard analytics for mayors (approval times, attendance patterns)
+- Thai language localization
+- Advanced meeting history with filtering
+- Bulk operations for multiple meetings
+- Meeting templates for recurring events
 
 ### Long-term Vision
 
-**Integrated Government Ecosystem:**
-Transform the app into a comprehensive municipal governance platform that extends beyond meeting management to include budget approvals, policy document distribution, and citizen engagement workflows. Integration with national government systems and other municipal departments would create a unified digital government experience.
-
-**AI-Powered Insights:**
-Implement intelligent features such as meeting conflict detection, optimal scheduling suggestions based on historical attendance patterns, and automated meeting summary generation from agenda items and attachments.
-
 **Expanded User Base:**
-Extend to other government roles (department heads, secretaries, legal advisors) and potentially other municipalities, creating a standardized government meeting management platform across Thailand.
-
-### Expansion Opportunities
-
-**Horizontal Expansion:**
-- Other government departments (provincial, national level)
-- Corporate board meeting management for government-owned enterprises
-- Educational institution governance (university boards, school committees)
-
-**Vertical Integration:**
-- Pre-meeting collaboration tools and agenda building
-- Live meeting management (attendance tracking, voting systems)
-- Post-meeting action item tracking and follow-up management
-- Integration with meeting room booking and AV systems
-
-**Technology Evolution:**
-- Voice-to-text for meeting notes and quick responses
-- Biometric authentication beyond signatures (fingerprint, face recognition)
-- Blockchain-based audit trails for enhanced transparency and tamper-proofing
-- AR/VR support for remote meeting participation
+Extend to other government roles (department heads, secretaries) and other municipalities, creating a standardized platform across Thailand with centralized government oversight.
 
 ## Technical Considerations
 
@@ -222,105 +227,141 @@ Extend to other government roles (department heads, secretaries, legal advisors)
 
 - **Target Platforms:** iOS (iPad) and Android (tablets) - tablet-optimized design with minimum 10" screen support
 - **Browser/OS Support:** iOS 14+ for iPad compatibility, Android 8.0+ for government-grade security requirements
-- **Performance Requirements:** Offline document caching up to 500MB per user, signature capture response time <1 second, document loading <3 seconds for files up to 50MB
+- **Performance Requirements:** Offline document caching up to 500MB per user (10-15 meetings), document loading <3 seconds for files up to 50MB, automatic cache management to optimize storage costs
 
 ### Technology Preferences
 
-- **Frontend:** Flutter framework for cross-platform tablet development with custom UI components optimized for government workflows
-- **Backend:** Integration with existing admin panel API, secure authentication service supporting Thai National ID validation
-- **Database:** Secure document storage with encryption at rest, signature audit trail with tamper-proof logging
-- **Hosting/Infrastructure:** Government-compliant cloud infrastructure or on-premises deployment depending on security requirements
+- **Frontend:** Flutter framework for cross-platform tablet development
+- **Backend:** Lightweight API integration with existing admin panel
+- **Database:** Extend existing admin panel database with minimal new tables (users, meetings, acknowledgments)
+- **Hosting/Infrastructure:** Supabase Pro hosting with cost-optimized egress management (200GB/month egress limit)
 
 ### Architecture Considerations
 
-- **Repository Structure:** Monorepo with separate modules for authentication, document management, signature capture, and offline sync
-- **Service Architecture:** Microservices approach with separate services for user management, meeting workflow, document storage, and notification delivery
+- **Repository Structure:** Single Flutter app repository with simple backend API
+- **Service Architecture:** Monolithic API service for cost efficiency (no complex microservices)
 - **Integration Requirements:**
-  - Existing admin panel API for meeting creation and user management
-  - Thai National ID validation service (government or third-party)
+  - Existing admin panel extended for meeting creation
+  - Thai National ID validation (simple format validation)
   - Device calendar API integration (iOS Calendar, Google Calendar)
-  - Push notification services (APNs, FCM)
+  - Push notification services (Firebase Cloud Messaging)
 - **Security/Compliance:**
-  - End-to-end encryption for document transmission
-  - Secure signature storage with legal compliance for Thai government standards
-  - Audit trail logging for all user actions and approvals
-  - Role-based access control with session management
-  - Offline data encryption and secure cache management
+  - Basic encryption for document transmission
+  - Simple session management
+  - Role-based access control (Admin vs Council Member)
+  - Offline data encryption
+
+### Cost-Optimization Strategies
+
+**Infrastructure Savings:**
+- Supabase Pro hosting (cost-effective for 50-60 users)
+- PostgreSQL database with built-in authentication
+- Supabase Storage with 200GB/month egress limit
+- Smart caching strategy (500MB/user) to stay within egress limits
+- No complex microservices architecture
+
+**Development Efficiency:**
+- Focus on council member mobile app only (no mayor mobile features)
+- Leverage existing admin panel (minimal new development)
+- Remove complex multi-stage approval workflows (mayor approval removed)
+- Standard authentication (no advanced biometric or MFA)
+- Basic logging (no comprehensive audit trail system)
+- Streamlined digital signature (acknowledgment and attendance only, not approval workflows)
+
+**Cost-Optimized Caching Strategy:**
+- 500MB per user limit prevents egress overage charges
+- Automatic cache management: prioritize upcoming meetings, auto-delete past meetings >30 days
+- WiFi-preferred downloads to reduce cellular data usage
+- Meeting-based caching (not document-based) ensures all materials for active meetings are available offline
 
 ## Constraints & Assumptions
 
 ### Constraints
 
-- **Budget:** Government project budget limitations requiring cost-effective development approach with fixed funding allocation for complete solution
-- **Timeline:** **Aggressive 2-3 month development window** for complete solution including Flutter app, API development, and admin panel enhancements - no room for scope creep or extended iterations
-- **Resources:** Small development team required to deliver app, backend API, and admin panel updates within tight timeline - requires experienced Flutter and backend developers
-- **Technical:** Must comply with Thai government data protection laws, rapid API development for mobile integration, and government-approved hosting infrastructure - all within 2-3 month delivery window
+- **Budget:** Fixed 500K THB budget (75% reduction from original 2M THB scope)
+- **Timeline:** 8-10 week development window for core council member features
+- **Resources:** Small development team (2-3 developers) focused on essential features only
+- **Technical:** Must comply with Thai government data protection laws, leverage existing admin panel infrastructure, cost-effective hosting
 
 ### Key Assumptions
 
-- **Rapid Development Approach:** Team has experience with Flutter, existing admin panel technology stack, and can work efficiently without extensive discovery phases
-- **API Development Speed:** Backend APIs for mobile app integration can be developed in parallel with Flutter app development within the 2-3 month timeline
-- **Admin Panel Extension:** Existing admin panel can be quickly enhanced to support meeting creation workflow for mobile app integration
-- **Government Infrastructure:** Municipal government infrastructure can support rapid deployment and testing cycles within development timeline
-- **User Device Access:** Target users (mayors and council members) have access to compatible tablets and can be onboarded quickly after deployment
-- **Legal Framework:** Digital signatures will be legally binding with no extended legal review period that could delay launch
-- **Minimal Iteration:** Core requirements are well-defined, allowing for direct development without extensive prototyping or user testing cycles
-- **Connectivity Patterns:** Offline capability implementation won't significantly extend development timeline despite complexity
-- **Document Standards:** Standard format support (PDF, Word, Excel, images) can be implemented efficiently without custom rendering engines
-- **Streamlined Testing:** Government acceptance testing can be completed rapidly without extensive bureaucratic approval processes
+- **Simplified Workflow:** Admin approval replaces mayor approval workflow, reducing complexity by 60%
+- **Existing Infrastructure:** Admin panel can be quickly enhanced for meeting creation and distribution
+- **User Device Access:** Council members have access to compatible tablets
+- **Connectivity Patterns:** Offline capability critical but implementation straightforward with document caching
+- **Legal Framework:** Digital signatures required for acknowledgment and attendance responses meet government standards
+- **Rapid Development:** Focused scope enables 8-10 week delivery vs. original 15-16 weeks
+- **Cost Discipline:** Team maintains strict budget discipline by avoiding scope creep
 
 ## Risks & Open Questions
 
 ### Key Risks
 
-- **Timeline Risk:** 2-3 month development window for app + API + admin panel may be insufficient for government-grade security implementation and testing requirements
-- **API Integration Complexity:** Existing admin panel architecture may not support rapid API extension, requiring more backend restructuring than anticipated
-- **Digital Signature Legal Compliance:** Thai government may require specific digital signature standards or certifications that could delay implementation or require third-party integration
-- **User Adoption Resistance:** Government officials may resist transitioning from familiar paper-based processes to tablet-based workflows, affecting initial adoption rates
-- **Device Compatibility Issues:** Wide variety of government-issued or personal tablets may create testing and support challenges within tight development timeline
-- **Security Clearance Delays:** Development team access to government systems for integration testing may be delayed by bureaucratic approval processes
-- **Offline Sync Complexity:** Implementing robust offline document access and signature sync may prove more complex than estimated, impacting core functionality
-- **Government Infrastructure Limitations:** Municipal network infrastructure may not support app deployment or ongoing maintenance requirements
+- **User Adoption:** Council members may initially resist transitioning from paper to tablets (mitigated by superior document viewing experience)
+- **Device Availability:** Some council members may not have compatible tablets (admin panel can track this during rollout)
+- **Internet Connectivity:** Offline capability critical for meeting venues with poor connectivity (addressed through robust caching)
+- **Admin Panel Integration:** Existing admin panel may require more modification than estimated (technical discovery needed in week 1)
 
 ### Open Questions
 
-- What specific digital signature standards or legal requirements must be met for Thai municipal government compliance?
-- What is the current architecture and technology stack of the existing admin panel that needs integration?
-- How many concurrent users (mayors + council members) will the system need to support across all municipalities?
-- What government-approved hosting options are available and what are their technical specifications?
-- Are there existing government authentication systems that must be integrated instead of custom Thai ID validation?
-- What specific document file size limits and formats are typical for municipal meeting attachments?
-- What level of audit trail detail is required for government compliance and transparency requirements?
-- How will user training and change management be handled during the 2-3 month development period?
+- What percentage of council members currently have compatible tablets?
+- What is the current admin panel technology stack for integration planning?
+- How many concurrent users (council members + admins) will the system support?
+- What specific document file size limits are typical for municipal meeting attachments?
+- Are there existing government authentication systems that must be integrated?
 
 ### Areas Needing Further Research
 
-- **Thai Government Digital Signature Standards:** Research legal requirements and approved technologies for municipal digital signatures
-- **Existing Admin Panel Technical Assessment:** Detailed analysis of current system architecture, APIs, and integration possibilities
-- **Government Security Requirements:** Comprehensive review of data protection, encryption, and compliance standards for municipal applications
-- **Device Management Policies:** Understanding of government device procurement, management, and support procedures for tablets
-- **Network Infrastructure Assessment:** Evaluation of municipal IT infrastructure capabilities for app deployment and ongoing support
-- **User Training Requirements:** Research into government change management processes and training resource availability
+- **Admin Panel Technical Assessment:** Detailed analysis of current system for integration planning
+- **Device Availability Survey:** Assess council member tablet availability for budgeting device procurement if needed
+- **Thai ID Validation Requirements:** Confirm simple format validation meets government standards
+- **Document Storage Requirements:** Understand typical meeting document volumes for storage planning
+
+## Value Proposition: 500K THB vs. 2M THB
+
+### Why This Approach Delivers Maximum ROI
+
+**Immediate Value to Council Members:**
+- Instant access to meeting materials (vs. 3-5 day postal delays)
+- Superior tablet-optimized document viewing during meetings
+- Offline access eliminates connectivity concerns
+- Streamlined digital signature workflow (acknowledgment and attendance only)
+
+**Significant Cost Savings:**
+- **Development:** 500K THB vs. 2M THB (75% reduction)
+- **Ongoing Operations:** 80% reduction in printing/postage costs
+- **Administrative Time:** 70% reduction in distribution coordination
+
+**Faster Time to Value:**
+- 8-10 week delivery vs. 15-16 week original timeline
+- Immediate deployment with smaller user training requirements
+- Simpler rollout (council members only vs. mayors + council members)
+
+**Future Expansion Path:**
+This 500K THB MVP establishes the foundation. If successful, Phase 2 can add mayor workflows and advanced features, incrementally approaching the original 2M THB vision with proven ROI.
 
 ## Next Steps
 
 ### Immediate Actions
 
-1. **Conduct Technical Discovery Session** - Meet with existing admin panel development team to assess current architecture, API capabilities, and integration requirements for mobile app development
-2. **Legal Compliance Research** - Research Thai government digital signature requirements and data protection standards to ensure compliance planning before development begins
-3. **Assemble Development Team** - Recruit experienced Flutter developers and backend engineers with government project experience who can work within the 2-3 month timeline
-4. **Government Stakeholder Alignment** - Schedule meetings with target mayors and council members to validate workflow assumptions and gather device/infrastructure details
-5. **Create Development Roadmap** - Break down the 2-3 month timeline into weekly sprints covering app development, API creation, admin panel enhancements, and testing phases
-6. **Establish Testing Environment** - Set up secure development and testing infrastructure that meets government security requirements for integration testing
+1. **Technical Discovery Session** - Meet with admin panel team to assess integration requirements and confirm 500K THB budget feasibility
+2. **User Device Survey** - Assess council member tablet availability to determine if device procurement needed
+3. **Assemble Lean Development Team** - Recruit 2-3 experienced Flutter/backend developers who can deliver within budget
+4. **Validate Simplified Workflow** - Confirm with stakeholders that admin approval (without mayor workflow) meets government requirements
+5. **Create 8-10 Week Roadmap** - Break down focused development timeline with weekly milestones
+6. **Confirm Infrastructure Costs** - Validate AWS infrastructure costs for 50-60 users fit within 500K THB budget
 
 ### PM Handoff
 
-This Project Brief provides the full context for the **Government Meeting Management Mobile Application**. The project involves developing a Flutter tablet app, backend APIs, and admin panel enhancements within a tight 2-3 month timeline to digitize municipal meeting workflows from paper-based to digital processes.
+This Project Brief provides the context for the **500K THB Government Meeting Management MVP** focusing exclusively on council member value.
 
 **Key Project Context:**
-- **Target Users:** Mayors (approval workflow) and Council Members (acknowledgment/response workflow)
-- **Core Workflow:** Admin creates meeting → Mayor approves/rejects with signature → Council members acknowledge and respond → All access materials during meetings
-- **Critical Constraints:** 2-3 month delivery window, government security compliance, Thai National ID authentication
-- **Success Criteria:** Complete digital workflow replacing 5-7 day manual process with same-day digital approval and notification
+- **Target Users:** Council Members (primary) and Administrators (secondary)
+- **Core Workflow:** Admin creates/approves meeting → Council members receive notification → Acknowledge receipt → Access documents offline during meetings
+- **Critical Constraints:** 500K THB budget (75% reduction), 8-10 week delivery, government security compliance
+- **Success Criteria:** Instant meeting access, 80% cost savings, superior offline document viewing, 95% user adoption
 
-Please start in **PRD Generation Mode**, review this brief thoroughly, and work with the stakeholder to create the PRD section by section as the template indicates, asking for any necessary clarification or suggesting improvements based on the technical constraints and aggressive timeline identified in this brief.
+**Budget Justification:**
+Original 2M THB scope included complex mayor approval workflows, digital signature infrastructure, comprehensive audit trails, and attendance tracking systems. This 500K THB MVP removes those features to focus laser-sharp on council member needs: quick event access, secure document download, and offline viewing.
+
+Please proceed with PRD generation focused on this streamlined scope, ensuring all requirements align with the 500K THB budget constraint and 8-10 week delivery timeline.
