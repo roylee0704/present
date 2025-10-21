@@ -323,7 +323,7 @@ enum Platform {
 
 ---
 
-### 3. Admin Panel Enhancement (Minimal Web Interface)
+### 3. Admin Panel Development (Minimal Web Interface)
 
 #### Essential Admin Features
 
@@ -758,11 +758,8 @@ enum Platform {
 ```
 Development Costs:
 ├── Flutter Mobile App (Council Member): 250,000 THB
-├── Backend API (Monolithic): 100,000 THB
-├── Admin Panel (Basic Enhancement): 50,000 THB
-├── Testing & QA: 30,000 THB
-├── Security & Compliance: 20,000 THB
-└── Deployment & Training: 50,000 THB
+├── Backend API (NestJS + Prisma): 125,000 THB
+└── Admin Panel (Next.js Web App): 125,000 THB
 
 Total Development: 500,000 THB
 ```
