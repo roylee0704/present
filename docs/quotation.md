@@ -13,7 +13,7 @@
 
 ## Executive Summary
 
-Titan Ai is pleased to propose a **cost-optimized MVP solution** for the Government Meeting Management Mobile Application project. This streamlined solution delivers immediate value to council members through a secure, tablet-optimized Flutter application that eliminates paper-based processes and provides instant digital access to meeting materials. **This MVP achieves 75% cost savings** compared to the comprehensive solution while maintaining core functionality and quality standards.
+Titan Ai is pleased to propose a **cost-optimized MVP solution** for the Government Meeting Management Mobile Application project. This streamlined solution delivers immediate value to council members through a secure, tablet-optimized mobile application that eliminates paper-based processes and provides instant digital access to meeting materials. **This MVP achieves 75% cost savings** compared to the comprehensive solution while maintaining core functionality and quality standards.
 
 **Total Project Investment:** THB 500,000 (Five Hundred Thousand Thai Baht)
 **Project Duration:** 8-10 weeks (2-2.5 months)
@@ -38,8 +38,8 @@ This 500K THB MVP focuses exclusively on delivering immediate value to council m
 
 ---
 
-### 1. Flutter Tablet Application (Council Member Focus)
-**Investment Allocation:** THB 250,000 (50%)
+### 1. Council Member Tablet Application (Android/iOS)
+**Investment Allocation:** THB 175,000 (35%)
 
 **Core Features:**
 - **Secure Authentication System** with Thai National ID format validation (9 9999 99999 99 9)
@@ -77,7 +77,7 @@ This 500K THB MVP focuses exclusively on delivering immediate value to council m
 ---
 
 ### 2. Backend API Development (NestJS + Supabase)
-**Investment Allocation:** THB 125,000 (25%)
+**Investment Allocation:** THB 200,000 (40%)
 
 **Complete API Services:**
 - **Authentication Service** with Thai National ID validation and JWT management
@@ -223,8 +223,8 @@ This 500K THB MVP focuses exclusively on delivering immediate value to council m
 - API integration testing with Jest
 - OpenAPI/Swagger documentation
 
-**Weeks 4-6: Flutter Mobile App**
-- Flutter project setup (tablet-optimized)
+**Weeks 4-6: Tablet Mobile App Development**
+- Cross-platform tablet app setup (Android/iOS)
 - Authentication screens and workflows
 - Events dashboard (Upcoming/Past tabs)
 - Meeting details and document viewing
@@ -234,7 +234,7 @@ This 500K THB MVP focuses exclusively on delivering immediate value to council m
 
 **Deliverables:**
 - ✅ Complete NestJS RESTful API operational
-- ✅ Flutter app functional on iOS and Android tablets
+- ✅ Tablet app functional on iOS and Android tablets
 - ✅ Document viewing and offline access working
 - ✅ Push notifications integrated
 
@@ -298,7 +298,7 @@ This 500K THB MVP focuses exclusively on delivering immediate value to council m
 - **Proven ROI Path:** Validate adoption before investing in Phase 2 expansion
 
 ### Technical Excellence
-- **Modern Technology Stack:** NestJS + Prisma + Supabase + Flutter for maintainability
+- **Modern Technology Stack:** Cross-platform mobile development with NestJS + Prisma + Supabase backend
 - **Government-Grade Security:** TLS 1.3, encryption at rest/in transit, audit trails
 - **Performance Optimization:** Right-sized architecture for 50-60 concurrent users
 - **Tablet-First Design:** Superior UX optimized for council member workflows
@@ -321,8 +321,8 @@ This 500K THB MVP focuses exclusively on delivering immediate value to council m
 
 | Component | Investment (THB) | Percentage |
 |-----------|------------------|------------|
-| Flutter Tablet Application (Council Member) | 250,000 | 50% |
-| Backend API Development (NestJS + Supabase) | 125,000 | 25% |
+| Council Member Tablet Application (Android/iOS) | 175,000 | 35% |
+| Backend API Development (NestJS + Supabase) | 200,000 | 40% |
 | Admin Panel Development (Next.js) | 125,000 | 25% |
 | Infrastructure Setup (Supabase + Firebase) | Included | - |
 | Testing & Security | Included | - |

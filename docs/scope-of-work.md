@@ -6,7 +6,7 @@
 
 **Timeline:** 8-10 weeks (2-2.5 months)
 **Budget:** 500,000 THB (75% reduction from original 2M THB scope)
-**Delivery:** Production-ready Flutter tablet application with streamlined backend APIs and enhanced admin panel
+**Delivery:** Production-ready cross-platform tablet application (Android/iOS) with streamlined backend APIs and enhanced admin panel
 
 ## Project Overview
 
@@ -32,7 +32,7 @@ This 500K THB scope focuses laser-sharp on council member value:
 
 ## Deliverables
 
-### 1. Flutter Tablet Application (Council Member Focus)
+### 1. Council Member Tablet Application (Android/iOS)
 
 #### Core Features
 
@@ -558,10 +558,10 @@ enum Platform {
 
 ---
 
-### Phase 3: Flutter Mobile App Development (Weeks 4-6)
+### Phase 3: Tablet Mobile App Development (Weeks 4-6)
 
 **Week 4-5: Core Mobile Features**
-- Flutter project setup with tablet-optimized architecture
+- Cross-platform tablet app setup (Android/iOS optimized)
 - Authentication screens (login, first-time password change)
 - Events dashboard with Upcoming/Past tabs
 - Meeting details view with document list
@@ -579,7 +579,7 @@ enum Platform {
 - Profile management screens
 
 **Deliverables:**
-- ✅ Flutter app functional on iOS and Android tablets
+- ✅ Tablet app functional on iOS and Android devices
 - ✅ All council member workflows implemented
 - ✅ Document viewing and offline access working
 - ✅ Digital signature capture operational
@@ -702,8 +702,8 @@ enum Platform {
   - DevOps setup (GitHub Actions, Supabase deployment)
   - Security implementation and compliance
 
-- **Flutter Developer** (1 person, full-time)
-  - Cross-platform tablet app development
+- **Mobile App Developer** (1 person, full-time)
+  - Cross-platform tablet app development (Android/iOS)
   - Offline caching and document viewing
   - Digital signature capture implementation
   - Firebase FCM integration
@@ -757,8 +757,8 @@ enum Platform {
 **Investment Breakdown:**
 ```
 Development Costs:
-├── Flutter Mobile App (Council Member): 250,000 THB
-├── Backend API (NestJS + Prisma): 125,000 THB
+├── Council Member Tablet Application (Android/iOS): 175,000 THB
+├── Backend API (NestJS + Prisma): 200,000 THB
 └── Admin Panel (Next.js Web App): 125,000 THB
 
 Total Development: 500,000 THB
@@ -785,7 +785,7 @@ Annual Infrastructure: ~48,000 THB (~4,000 THB/month)
 ### What's Included
 
 **In Scope (500K THB):**
-- ✅ Flutter tablet app for council members (iOS + Android)
+- ✅ Council member tablet application for iOS + Android
 - ✅ Complete backend API with Supabase integration
 - ✅ Basic admin panel for meeting management
 - ✅ Digital signature capture system
@@ -913,7 +913,7 @@ If the MVP succeeds and stakeholders approve additional investment, here's the p
 
 **4. Team Assembly (Priority: MEDIUM)**
 - ✅ Confirm availability of Lead Developer/Architect (Week 1 start)
-- ✅ Recruit Flutter Developer with tablet experience
+- ✅ Recruit Mobile App Developer with cross-platform tablet experience
 - ✅ Engage part-time Frontend Developer for admin panel
 - ✅ Contract QA Engineer for testing phase (Weeks 7-8)
 - ✅ Identify security consultant for final review
